@@ -1,0 +1,150 @@
+#PVF_File
+
+[name]
+	`混元武士的咒蕴短靴`
+
+[basic explain]
+	`    装备后， 每30秒会使自身进入诅咒状态。
+ 
+移动速度 +10%%
+物理攻击力 +90
+魔法攻击力 +90
+独立攻击力 +90`
+
+[detail explain]
+	`    每30秒使自身进入诅咒状态30秒； 诅咒状态下， 将减少44点力量、 体力、 智力和精神。 (若敌人高于Lv100， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备1秒后生效)
+移动速度 +10%%
+物理攻击力 +90
+魔法攻击力 +90
+独立攻击力 +90
+(装备10秒后生效)`
+
+[flavor text]
+	`    我的爱情一定是被诅咒了！`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[part set index]
+	11468
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	55
+
+[magical attack]
+	47
+
+[move speed]
+	60
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[need material]
+	3285	3000
+
+[price]
+	72900
+
+[repair price]
+	58320
+
+[value]
+	58320
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	1656	1494
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	16
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	16
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[start cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`equipment physical attack`
+		`+`	65
+	[stat by condition]
+		`equipment magical attack`
+		`+`	65
+	[stat by condition]
+		`separate attack`
+		`+`	90
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[if]
+	[time]
+		100	1	100
+	[cooltime]
+		100
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`curse`	100	44	44	44	44
+[/then]
+
+[possible kiri protect]

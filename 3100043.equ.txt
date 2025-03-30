@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`嘲风之祛邪护腿`
+
+[basic explain]
+	`暴击时， 额外增加11%%的伤害增加量。 
+攻击时， 有2%%的几率使敌人进入冰冻状态。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入冰冻状态， 效果持续3秒。 (若敌人高于Lv101， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间10秒)`
+
+[flavor text]
+	`    西秦饮渭水， 东洛荐河图。 `
+
+[grade]
+	95
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[part set index]
+	30222
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	95
+
+[physical attack]
+	46
+
+[magical attack]
+	46
+
+[magical defense]
+	52
+
+[water attack]
+	16
+
+[water resistance]
+	8
+
+[equipment physical defense]
+	2442	1940
+
+[need material]
+	3285	1500
+
+[price]
+	96000
+
+[repair price]
+	76800
+
+[value]
+	76800
+
+[icon]
+	`item/new_equipment/03_leather/pants/leather_pants.img`	70
+
+[field image]
+	`Item/FieldImage.img`	1
+
+[equipment type]
+	`[pants]`	19
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	27
+
+[weight]
+	1500
+
+[item group name]
+	`lt pants`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[swordman]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[swordman]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[fighter]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[fighter]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[gunner]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[gunner]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[priest]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[priest]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[thief]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[thief]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[duration]
+		3000
+	[active status]
+		`freeze`	101
+[/then]
+
+[possible kiri protect]
+
+[creation rate]
+	50
+
+[anti evil]
+	100

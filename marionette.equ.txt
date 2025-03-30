@@ -1,0 +1,81 @@
+#PVF_File
+
+[name]
+	`魔力初体验`
+
+[name2]
+	`Marionette`
+
+[explain]
+	`    攻击时， 有3%%的几率使敌人进入混乱状态3秒。 (混乱Lv与自身Lv相同)`
+
+[grade]
+	1
+
+[attach type]
+	`[trade]`
+
+[rarity]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[no random]
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	267
+
+[equipment type]
+	`[title name]`	1
+
+[custom animation]
+	`TitleAnimation/marionette.ani`
+[/custom animation]
+
+[physical attack]
+	15
+
+[magical attack]
+	15
+
+[move wav]
+	`NAME_TOUCH`
+
+[npc gift disallowance]
+	1
+
+[if]
+	[cooltime]
+		6000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	-1	1
+[/then]
+
+[impossible contents]
+	`disjoint`
+	`gift`
+[/impossible contents]

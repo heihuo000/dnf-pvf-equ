@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`海神谜咒之轻灵战靴`
+
+[basic explain]
+	`    攻击时， 有10%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`    攻击时， 有10%%的几率使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    老朋友听了， 只是说了一句话 : 技术并不能决定一切， 心态才是成败的关键……`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[part set index]
+	12400
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	10000204	10
+
+[random option]
+	1
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	27
+
+[magical attack]
+	18
+
+[move speed]
+	40
+
+[stuck resistance]
+	20
+
+[price]
+	72000
+
+[repair price]
+	57600
+
+[value]
+	57600
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1764	1638
+
+[water attack]
+	6
+
+[fire resistance]
+	-6
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	36
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		5000
+	[active status]
+		`curse`	90	50	50	50	50
+[/then]
+
+[possible kiri protect]

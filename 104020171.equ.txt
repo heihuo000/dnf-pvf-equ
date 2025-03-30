@@ -1,0 +1,179 @@
+#PVF_File
+
+[name]
+	`千蛛之缠`
+
+[basic explain]
+	`    [交叉射击]攻击时， 可以使敌人进入束缚状态2秒。`
+
+[detail explain]
+	`    [交叉射击]攻击时， 可以使敌人进入束缚状态2秒。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[magical attack]
+	38
+
+[need material]
+	10149508	45
+
+[price]
+	61200
+
+[repair price]
+	48960
+
+[value]
+	48960
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	342	281
+
+[equipment magical attack]
+	297	245
+
+[separate attack]
+	195	129
+
+[skill levelup]
+	`[gunner]`	110	1
+	`[at gunner]`	110	1
+	`[gunner]`	112	1
+	`[at gunner]`	31	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/musket/musket.img`	124
+
+[field image]
+	`Item/field_weapon.img`	3
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`musketc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`musketb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`at_musketc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_musketb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`BOWGUN_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2100
+
+[item group name]
+	`musket`
+
+[cool time]
+	10000
+
+[if]
+	[skill]
+		`gunner`	48
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[active status]
+		`hold`	34
+[/then]
+
+[if]
+	[skill]
+		`at gunner`	48
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		100
+	[duration]
+		2000
+	[active status]
+		`hold`	34
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]

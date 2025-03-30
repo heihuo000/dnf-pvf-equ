@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`血影明空剑`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态。
+ 
+    攻击出血状态的敌人时， 可使自身增加10点物理攻击力。
+ 
+    攻击时， 附加8%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入出血状态7秒； 出血状态下的敌人， 每0.5秒受到1000点伤害。
+ 
+    攻击出血状态的敌人时， 可使自身增加10点物理攻击力。 (效果最多重叠15次)
+ 
+    攻击时， 附加8%%的伤害。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	988	826
+
+[equipment magical attack]
+	728	651
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	5
+
+[physical critical hit]
+	5
+
+[icon]
+	`item/new_equipment/01_weapon/thief/twinswd/twinswd.img`	109
+
+[field image]
+	`Item/field_weapon.img`	17
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	28	0
+
+[layer variation]
+	2790
+	`twinswordc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`twinswordd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`twinswordx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`TWINSWD_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`twinswd`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		6000
+	[active status]
+		`bleeding`	90	6000
+[/then]
+
+[if]
+	[event attack success]
+		1
+	[target active status]
+		`bleeding`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		1518
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	8
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,202 @@
+#PVF_File
+
+[name]
+	`死亡聚集`
+
+[basic explain]
+	`暴击时，  额外增加38%%的伤害增加量。  
+攻击时，  附加28%%的伤害。 
+攻击出血状态的敌人时， 发动疯狂毁灭buff， 效果持续60秒。
+ 
+攻击时， 使敌人进入出血状态3秒。 `
+
+[detail explain]
+	`暴击时，  额外增加38%%的伤害增加量。 
+攻击时，  附加28%%的伤害
+攻击出血状态的敌人时， 发动疯狂毁灭buff， 效果持续60秒。 (最多重叠1次； 冷却时间10秒； 解除装备后效果消失)
+  - 攻击速度 +12%%
+ 
+攻击时， 使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到1000点伤害。 (若敌人高于Lv101， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    死亡召唤死亡。`
+
+[grade]
+	95
+
+[rarity]
+	4
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[need material]
+	3285	2000
+
+[minimum level]
+	95
+
+[physical attack]
+	78
+
+[magical attack]
+	78
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	182000
+
+[repair price]
+	145600
+
+[value]
+	145600
+
+[equipment physical attack]
+	1112	878
+
+[equipment magical attack]
+	1172	924
+
+[separate attack]
+	723	526
+
+[physical critical hit]
+	10
+
+[magical critical hit]
+	10
+
+[icon]
+	`Item/new_equipment/01_weapon/priest/scythe/scythe.img`	155
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	57	0
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	254	`[dungeon type]`	`[level]`	27	`+`	76
+	`[all]`	254	`[dungeon type]`	`[level]`	28	`+`	76
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	28
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[equipment duration]
+		3000
+	[active status]
+		`bleeding`	101	1000
+[/then]
+
+[if]
+	[cooltime]
+		700000
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[stat]
+		`attack speed`
+		`+`	120
+[/then]
+
+[possible kiri protect]
+
+[creation rate]
+	50
+
+[anti evil]
+	300
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	57	0
+
+[layer variation]
+	2790
+	`at_scythec`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_scythex`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_scythed`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

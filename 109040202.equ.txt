@@ -1,0 +1,172 @@
+#PVF_File
+
+[name]
+	`血之赞歌`
+
+[basic explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态。 (冷却时间3秒)`
+
+[detail explain]
+	`攻击时， 有3%%的几率使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒受到1500点伤害。 (冷却时间3秒)`
+
+[grade]
+	69
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	65
+
+[magical attack]
+	69
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	110400
+
+[repair price]
+	88320
+
+[value]
+	88320
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	522	462
+
+[equipment magical attack]
+	719	664
+
+[separate attack]
+	389	263
+
+[skill levelup]
+	`[thief]`	24	1
+	`[thief]`	86	2
+	`[thief]`	99	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/chakraweapon/chakraweapon.img`	60
+
+[field image]
+	`Item/field_weapon.img`	19
+
+[equipment type]
+	`[weapon]`	17
+
+[animation job]
+	`[thief]`
+
+[variation]
+	5	4
+
+[layer variation]
+	2791
+	`chakraweaponc1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	2792
+	`chakraweaponc2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	210
+	`chakraweapond1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	220
+	`chakraweapond2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1360
+	`chakraweaponx1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1370
+	`chakraweaponx2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`KUNAI_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[required skill]
+	79
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		3000
+	[active status]
+		`bleeding`	65	9000
+[/then]
+
+[random option]
+	1
+
+[need material]
+	19100131	1

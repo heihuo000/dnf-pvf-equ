@@ -1,0 +1,105 @@
+#PVF_File
+
+[name]
+	`煞影之痕`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	35
+
+[magical attack]
+	35
+
+[physical defense]
+	35
+
+[magical defense]
+	35
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[equipment magical attack]
+	100	100
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	108
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`ASSIST_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`stun`	89
+[/then]
+
+[possible kiri protect]

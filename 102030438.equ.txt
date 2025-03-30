@@ -1,0 +1,207 @@
+#PVF_File
+
+[name]
+	`圣物 : 暮冰精灵的裂岩拳套`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv74， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[attack speed]
+	100
+
+[price]
+	133200
+
+[repair price]
+	106560
+
+[value]
+	106560
+
+[creation rate]
+	250
+
+[equipment physical attack]
+	739	687
+
+[equipment magical attack]
+	669	621
+
+[separate attack]
+	419	283
+
+[icon]
+	`Item/new_equipment/01_weapon/fighter/bglove/bglove.img`	85
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	17	6
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	18	6
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[spectrum]
+	255	0	255	300	500
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`stun`	74
+[/then]
+
+[all skill item]
+	[item growtype]
+		`[fighter]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			70
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[all skill item]
+	[item growtype]
+		`[at fighter]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			70
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[possible kiri protect]

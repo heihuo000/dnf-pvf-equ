@@ -1,0 +1,187 @@
+#PVF_File
+
+[name]
+	`溶血之月`
+
+[basic explain]
+	`    被攻击时， 有20%%的几率使自身进入加速状态。`
+
+[detail explain]
+	`    被攻击时， 有20%%的几率使自身进入加速状态； 加速状态下， 增加8%%的移动速度和攻击速度。 (冷却时间20秒)`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	25
+
+[physical attack]
+	33
+
+[attack speed]
+	-50
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	30
+
+[price]
+	46400
+
+[repair price]
+	37120
+
+[value]
+	37120
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	360	312
+
+[equipment magical attack]
+	255	221
+
+[separate attack]
+	171	112
+
+[physical critical hit]
+	2
+
+[skill levelup]
+	`[mage]`	35	2
+	`[at mage]`	122	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	137
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	46	0
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		20000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[reduce probability at pvp module]
+		90
+	[equipment duration]
+		15000
+	[active status]
+		`haste`	29	8	8
+[/then]
+
+[possible kiri protect]

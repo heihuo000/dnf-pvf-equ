@@ -1,0 +1,246 @@
+#PVF_File
+
+[name]
+	`圣物 : 恶魔守卫的风暴拳套`
+
+[basic explain]
+	`格斗家(男) Lv75 ~ 80全部 技能 Lv +1 (仅限主动技能， 副本内生效) 
+格斗家(女) Lv75 ~ 80全部 技能 Lv +1 (仅限主动技能， 副本内生效) 
+ 
+根据所携带的圣物道具数量， 将会产生如下效果。 
+力量 + 273
+智力 + 273
+体力 + 138
+精神 + 138
+ 
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	89
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	58
+
+[attack speed]
+	100
+
+[price]
+	160200
+
+[repair price]
+	128160
+
+[value]
+	128160
+
+[creation rate]
+	60
+
+[equipment physical attack]
+	897	844
+
+[equipment magical attack]
+	811	764
+
+[separate attack]
+	510	346
+
+[icon]
+	`Item/new_equipment/01_weapon/fighter/bglove/bglove.img`	123
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[icon mark]
+	`Item/IconMark.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	19	9
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	20	9
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[spectrum]
+	255	0	255	300	500
+
+[elemental property]
+	`[dark element]`
+
+[required skill]
+	34
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	89
+[/then]
+
+[all skill item]
+	[item growtype]
+		`[fighter]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			70
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[all skill item]
+	[item growtype]
+		`[at fighter]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			1
+		[upper bound level]
+			70
+		[value]
+			1
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[skill data up]
+	`[fighter]`	254	`[all]`	`[level]`	4	`+`	273
+	`[fighter]`	254	`[all]`	`[level]`	5	`+`	273
+	`[fighter]`	254	`[all]`	`[level]`	6	`+`	138
+	`[fighter]`	254	`[all]`	`[level]`	7	`+`	138
+	`[at fighter]`	254	`[all]`	`[level]`	4	`+`	273
+	`[at fighter]`	254	`[all]`	`[level]`	5	`+`	273
+	`[at fighter]`	254	`[all]`	`[level]`	6	`+`	138
+	`[at fighter]`	254	`[all]`	`[level]`	7	`+`	138
+[/skill data up]
+
+[possible kiri protect]
+
+[if]
+	[module]
+		`[dungeon type]`
+		`[war room]`
+	[/module]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cool time]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		1246
+[/then]

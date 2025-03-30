@@ -1,0 +1,265 @@
+#PVF_File
+
+[name]
+	`天命之矛`
+
+[basic explain]
+	`暴击伤害 +20%%
+    攻击时， 有5%%的几率使敌人进入出血状态， 效果持续7秒。
+    用[碎霸]、 [狱血之噬]攻击出血状态的敌人时， 可附加50000点伤害。
+    用[炫纹碎霸]、 [死亡之握]攻击出血状态的敌人时， 可使敌人减少20%%的HP上限。`
+
+[detail explain]
+	`暴击伤害 +20%% (暴击伤害加成效果取最高值， 且无法叠加)
+    攻击时， 有5%%的几率使敌人进入出血状态， 效果持续7秒； 出血状态下的敌人， 每0.5秒会受到214点伤害。 (若敌人高于Lv85， 则减少进入异常状态的几率； 反之， 则增加几率)
+    用[碎霸]、 [狱血之噬]攻击出血状态的敌人时， 附加50000点伤害。 (在决斗场中伤害为2500)
+    用[炫纹碎霸]、 [死亡之握]攻击出血状态的敌人时， 可以使敌人减少20%%的HP上限。 (对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	101
+
+[attack speed]
+	-50
+
+[stuck]
+	-1
+
+[price]
+	136000
+
+[repair price]
+	114240
+
+[value]
+	108800
+
+[creation rate]
+	200
+
+[equipment physical attack]
+	1089	929
+
+[equipment magical attack]
+	771	658
+
+[separate attack]
+	555	359
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[mage]`	13	3
+	`[mage]`	117	2
+	`[at mage]`	111	2
+	`[at mage]`	107	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/mage/spear/spear.img`	104
+
+[field image]
+	`Item/field_weapon.img`	6
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	31	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	32	1
+
+[layer variation]
+	2150
+	`at_speara`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_speard`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	31	1
+
+[layer variation]
+	2790
+	`spearc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`speard`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`SPEAR_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3200
+
+[item group name]
+	`spear`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		7000
+[/if]
+
+[then]
+	[probability]
+		5
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[active status]
+		`bleeding`	85	214
+[/then]
+
+[if]
+	[skill]
+		`mage`	13
+	[/skill]
+	[attack success]
+		1
+	[target active status]
+		`bleeding`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50000
+[/then]
+
+[if]
+	[skill]
+		`at mage`	111
+	[/skill]
+	[attack success]
+		1
+	[target active status]
+		`bleeding`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`+`	50000
+[/then]
+
+[if]
+	[skill]
+		`mage`	117
+	[/skill]
+	[attack success]
+		1
+	[target active status]
+		`bleeding`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[weakness]
+		20
+[/then]
+
+[if]
+	[skill]
+		`at mage`	107
+	[/skill]
+	[attack success]
+		1
+	[target active status]
+		`bleeding`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[weakness]
+		20
+[/then]
+
+[if]
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase critical damage]
+		`%`	20
+[/then]
+
+[possible kiri protect]

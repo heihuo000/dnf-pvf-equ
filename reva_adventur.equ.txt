@@ -1,0 +1,126 @@
+#PVF_File
+
+[name]
+	`name_26392`
+
+[explain]
+	`explain_26392`
+
+[flavor text]
+	`flavor_text_26392`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[no random]
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	226
+
+[custom animation]
+	`TitleAnimation/reva_adventur.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	150
+
+[MP MAX]
+	150
+
+[physical attack]
+	25
+
+[physical defense]
+	25
+
+[magical attack]
+	25
+
+[magical defense]
+	25
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[if]
+	[cooltime]
+		10000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[active status]
+		`confuse`	-1	1
+[/then]
+
+[if]
+	[cooltime]
+		15000
+	[module]
+		`[pvp]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		1
+	[active status]
+		`confuse`	-1	1
+[/then]
+
+[move wav]
+	`NAME_TOUCH`

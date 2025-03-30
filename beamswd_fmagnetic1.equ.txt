@@ -1,0 +1,418 @@
+#PVF_File
+
+[name]
+	`纵火犯本汀克的喷火器`
+
+[basic explain]
+	`    攻击时， 有15%%的几率附加10%%的火属性伤害。
+    攻击时， 有10%%的几率使敌人进入灼伤状态。
+    攻击时， 对500px内敌人触发冰针效果。
+    被火属性攻击时10秒内恢复20%%生命值20%%法力值，攻击的敌人触发Lv60的灼烧持续10秒。
+    穿戴时自身进入灼烧状态，进入灼烧状态每30秒持续恢复30%%的生命值。
+    穿戴时自身提升200点火属性抗性。
+    移动时脚下生成燃烧火焰。`
+
+[grade]
+	64
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[need material]
+	3336	370
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	762	715
+
+[equipment magical attack]
+	644	599
+
+[separate attack]
+	360	242
+
+[icon]
+	`Item/weapon/swordman/beamswd.img`	69
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2151
+	`at_beamswda1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	2152
+	`at_beamswda2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	651
+	`at_beamswdb1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	652
+	`at_beamswdb2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_beamswdx`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	20	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[fire element]`
+
+[spectrum]
+	237	247	18	200	500
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		15
+	[add absolute damage]
+		`fire`
+		`%`	10
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	75
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	2000
+		`欢迎来到我的领域！！！`
+	[/speech on]
+[/then]
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`burn`	64	2100	0	0	0
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[probability]
+		100
+	[passive object]
+		30067	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`fire element`
+		`+`	200
+	[stat by condition]
+		`water element`
+		`+`	200
+	[stat by condition]
+		`freeze resistance`
+		`+`	200
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	300
+	[duration]
+		1000
+	[stat by condition]
+		`fire element`
+		`+`	-20
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		900000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`burn`	99	0	500	1	2000
+[/then]
+
+[if]
+	[time]
+		30000	1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`burn`	99	0	500	1	2000
+[/then]
+
+[if]
+	[element]
+		`fire`
+	[hit]
+		1
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	20	10000
+[/then]
+
+[if]
+	[element]
+		`fire`
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[active status]
+		`burn`	60	1000	500	1	2000
+[/then]
+
+[if]
+	[my state]
+		`dash`
+	[time]
+		120	1	500
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		9922	0	0	0	5	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[set my state]
+		1
+	[my state]
+		`final attack`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[passive object]
+		20024	0	0	0	1	0	``
+	[/passive object]
+[/then]
+
+[spectrum]
+	247	18	18	200	500
+
+[routing priority]
+	`swordman`	1
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]

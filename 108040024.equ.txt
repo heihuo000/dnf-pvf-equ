@@ -1,0 +1,217 @@
+#PVF_File
+
+[name]
+	`圣光战镰[活动]`
+
+[basic explain]
+	`    攻击时， 有4%%的几率使敌人进入感电状态。
+    无法进行合成和分解。`
+
+[detail explain]
+	`攻击时以4%%的机率5秒内让敌人呈现触电状态， 每次击时以130的攻击力给予追加伤害. （高于Lv61的对象得到的机率减少， 低于Lv61的对象则会增加。）`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[magical attack]
+	41
+
+[attack speed]
+	80
+
+[stuck]
+	1
+
+[price]
+	97600
+
+[repair price]
+	81984
+
+[value]
+	78080
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	528	490
+
+[equipment magical attack]
+	556	516
+
+[separate attack]
+	341	230
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	7	2
+	`[priest]`	115	1
+	`[priest]`	117	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	40
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2791
+	`holyscythec1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2792
+	`holyscythec2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	201
+	`holyscythed1`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	202
+	`holyscythed2`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		4
+	[reduce probability to human armor at pvp module]
+		60
+	[active status]
+		`lightning`	61	130
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	8	0
+
+[layer variation]
+	2791
+	`at_scythec1`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1351
+	`at_scythex1`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	201
+	`at_scythed1`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	2792
+	`at_scythec2`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1352
+	`at_scythex2`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	202
+	`at_scythed2`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

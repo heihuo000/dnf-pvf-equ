@@ -1,0 +1,96 @@
+#PVF_File
+
+[name]
+	`冒险家联盟会员`
+
+[explain]
+	`    与志同道合的同志并肩战斗， 你将会激发无限的勇气和智慧。`
+
+[flavor text]
+	`    只有冒险家才能真正懂得冒险家。 欢迎！  --卡拉卡斯`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	630
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[no random]
+
+[weight]
+	1
+
+[npc gift disallowance]
+	1
+
+[custom animation]
+	`TitleAnimation/adventurer guild.ani`
+[/custom animation]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[probability]
+		100
+	[active status]
+		`bless`	100	10	10	10	10
+	[active status]
+		`haste`	100	5	5
+[/then]
+
+[if]
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`party`	-1
+	[equipment duration]
+		60000
+	[probability]
+		100
+	[active status]
+		`bless`	100	10	10	10	10
+	[active status]
+		`haste`	100	5	5
+[/then]

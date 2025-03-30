@@ -1,0 +1,225 @@
+#PVF_File
+
+[set name]
+	`遗忘者的远古  套装`
+
+[piece set ability]
+	1	
+	[skill data up]
+		`[swordman]`	44	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[swordman]`	44	`[dungeon type]`	`[level]`	3	`%`	15
+	[/skill data up]
+	[parameter basic explain]
+		`[死亡墓碑]攻击力 +15%%
+[死亡墓碑]冷却时间 -30%%`
+[/piece set ability]
+
+[piece set ability]
+	2	
+	[skill data up]
+		`[swordman]`	44	`[dungeon type]`	`[level]`	2	`+`	24
+		`[swordman]`	44	`[dungeon type]`	`[level]`	1	`%`	-20
+		`[swordman]`	95	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[swordman]`	95	`[dungeon type]`	`[level]`	2	`+`	1
+		`[swordman]`	95	`[dungeon type]`	`[static]`	0	`+`	30
+		`[swordman]`	95	`[dungeon type]`	`[static]`	1	`+`	-10
+		`[swordman]`	95	`[dungeon type]`	`[static]`	2	`+`	-30
+		`[swordman]`	95	`[dungeon type]`	`[static]`	3	`+`	-10
+		`[swordman]`	95	`[dungeon type]`	`[static]`	4	`+`	120
+		`[swordman]`	95	`[dungeon type]`	`[static]`	5	`+`	10
+	[/skill data up]
+	[parameter basic explain]
+		`[死亡墓碑]降落速度 +20%%
+[死亡墓碑]掉落数量 +24
+[墓碑三绝阵]墓碑数量 +1
+[墓碑三绝阵]冷却时间 -20%%`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[use skill]
+			`swordman`	25
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[passive object]
+			99997	0	0	0	0	0	``
+			99021	0	0	0	0	-1	``
+			99121	0	0	0	0	-1	``
+		[/passive object]
+		[stat]
+			`physical attack`
+			`%`	20
+		[stat]
+			`magical attack`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	41
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99998	0	0	0	0	0	``
+			99022	0	0	0	0	-1	``
+			99122	0	0	0	0	-1	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	36
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99999	0	0	0	0	0	``
+			99023	0	0	0	0	-1	``
+			99123	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			147
+	[/then]
+	[if]
+		[my appendage]
+			147
+		[target active status]
+			`freeze`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	75
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999100	0	0	0	0	0	``
+			99024	0	0	0	0	-1	``
+			99124	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			142
+	[/then]
+	[if]
+		[my appendage]
+			142
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			6000
+		[passive object]
+			99026	0	0	0	0	-1	``
+		[/passive object]
+		[active status]
+			`any`	120
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	44
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999104	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	60
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999102	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	111
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999101	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	95
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			660058	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	241
+		[cooltime]
+			25000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			100
+		[summon monster]
+			64053	-1	1
+	[/then]
+	[skill data up]
+		`[swordman]`	95	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[swordman]`	95	`[dungeon type]`	`[level]`	10	`%`	100
+		`[swordman]`	95	`[dungeon type]`	`[level]`	11	`%`	100
+		`[swordman]`	95	`[dungeon type]`	`[level]`	13	`%`	30
+		`[swordman]`	95	`[dungeon type]`	`[skill consume item]`	0	`+`	2
+		`[swordman]`	44	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[swordman]`	44	`[dungeon type]`	`[level]`	0	`%`	30
+		`[swordman]`	44	`[dungeon type]`	`[level]`	2	`%`	30
+		`[swordman]`	44	`[dungeon type]`	`[mp]`	0	`%`	100
+	[/skill data up]
+	[parameter basic explain]
+		`[死亡墓碑]冷却时间 -20%%
+[死亡墓碑]掉落范围 +30%%
+[死亡墓碑]掉落数量 +30%%
+[死亡墓碑]MP消耗量 +100%%
+[墓碑三绝阵]墓碑存在时间 +100%%
+[墓碑三绝阵]冷却时间 -30%%
+[墓碑三绝阵]减少敌人暗属性抗性 +100%%
+[墓碑三绝阵]墓碑的光环范围 +30%%
+[王者号令 : 吉格降临]神官吉格召唤数 +1`
+[/piece set ability]

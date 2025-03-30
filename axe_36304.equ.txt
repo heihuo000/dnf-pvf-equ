@@ -1,0 +1,176 @@
+#PVF_File
+
+[name]
+	`寒冰巨人的霜天斧`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入冰冻状态。
+`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入冰冻状态5秒； 但在决斗场中， 只能持续2秒。 (若敌人高于Lv49， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+`
+
+[grade]
+	49
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	45
+
+[physical attack]
+	51
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	78400
+
+[repair price]
+	62720
+
+[value]
+	62720
+
+[equipment physical attack]
+	552	504
+
+[equipment magical attack]
+	391	357
+
+[separate attack]
+	269	180
+
+[skill levelup]
+	`[priest]`	88	1
+	`[demonic swordman]`	210	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/axe.img`	70
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	19	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[water element]`
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		60
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`freeze`	49
+[/then]
+
+[routing priority]
+	`priest`	3
+[/routing priority]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	19	0
+
+[layer variation]
+	2790
+	`at_axec`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_axex`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_axed`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

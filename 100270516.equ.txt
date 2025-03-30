@@ -1,0 +1,112 @@
+#PVF_File
+
+[name]
+	`阿努比斯陶瓷长靴`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入失明状态10秒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入失明状态10秒， 失明状态的敌人减少5%%的命中率和80%%的视野。 (若敌人高于Lv95， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	95
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	28
+
+[magical attack]
+	19
+
+[move speed]
+	40
+
+[price]
+	76000
+
+[repair price]
+	60800
+
+[value]
+	60800
+
+[creation rate]
+	0
+
+[all elemental attack]
+	24
+
+[equipment physical defense]
+	1854	1728
+
+[icon]
+	`item/new_equipment/04_larmor/shoes/larmor_shoes.img`	60
+
+[field image]
+	`Item/field_equip.img`	9
+
+[equipment type]
+	`[shoes]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1400
+
+[item group name]
+	`la shoes`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		2000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[active status]
+		`blind`	95	5	80
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,206 @@
+#PVF_File
+
+[name]
+	`泯灭之领域`
+
+[basic explain]
+	`        攻击时， 有10%%的几率使所有敌人进入减速状态， 效果持续60秒。
+    若自身周围650px范围内， 每存在1个减速状态的敌人， 可使自身增加65点力量和智力。
+    若自身周围550px范围内， 每存在1个减速状态的敌人， 可使自身增加5%%的物理暴击率和魔法暴击率。
+    若自身周围450px范围内， 每存在1个减速状态的敌人， 可使自身增加15点的火属性强化和光属性强化。
+    若自身周围250px范围内， 每存在1个减速状态的敌人， 可使自身增加10%%的物理攻击力和魔法攻击力。`
+
+[detail explain]
+	`    攻击时， 有10%%的几率使所有敌人进入减速状态， 效果持续60秒； 减速状态下的敌人， 会减少5%%的移动速度和攻击速度。 (若敌人高于Lv89， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    若自身周围650px范围内， 每存在1个减速状态的敌人， 可使自身增加65点力量和智力。
+    若自身周围550px范围内， 每存在1个减速状态的敌人， 可使自身增加5%%的物理暴击率和魔法暴击率。
+    若自身周围450px范围内， 每存在1个减速状态的敌人， 可使自身增加15点的火属性强化和光属性强化。
+    若自身周围250px范围内， 每存在1个减速状态的敌人， 可使自身增加10%%的物理攻击力和魔法攻击力。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	635	519
+
+[equipment magical attack]
+	931	761
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/automatic/automatic.img`	135
+
+[field image]
+	`Item/field_weapon.img`	2
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2790
+	`autoc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`autob`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	41	0
+
+[layer variation]
+	2790
+	`at_autoc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_autob`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUN_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	1500
+
+[item group name]
+	`automatic`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	9999
+	[duration]
+		60000
+	[probability]
+		10
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`slow`	89	5	5
+[/then]
+
+[variable stat]
+	`magical attack`
+	`+`	65
+	`object number`
+	`enemy`	650
+	`slow`	100
+	`physical attack`
+	`+`	65
+	`object number`
+	`enemy`	650
+	`slow`	100
+	`magical critical hit`
+	`+`	5
+	`object number`
+	`enemy`	550
+	`slow`	100
+	`physical critical hit`
+	`+`	5
+	`object number`
+	`enemy`	550
+	`slow`	100
+	`fire attack`
+	`+`	15
+	`object number`
+	`enemy`	450
+	`slow`	100
+	`light attack`
+	`+`	15
+	`object number`
+	`enemy`	450
+	`slow`	100
+	`equipment magical attack`
+	`%`	10
+	`object number`
+	`enemy`	250
+	`slow`	100
+	`equipment physical attack`
+	`%`	10
+	`object number`
+	`enemy`	250
+	`slow`	100
+[/variable stat]
+
+[possible kiri protect]

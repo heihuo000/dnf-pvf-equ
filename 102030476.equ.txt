@@ -1,0 +1,204 @@
+#PVF_File
+
+[name]
+	`千毒绽放拳套`
+
+[basic explain]
+	`    攻击时， 附加18%%的伤害。
+ 
+    攻击中毒状态的敌人时， 增加12%%的伤害。
+    攻击时， 有5%%的几率施放猛毒爆炸。
+    攻击时， 有20%%的几率使敌人进入中毒状态10秒。`
+
+[detail explain]
+	`    攻击时， 附加18%%的伤害。
+ 
+    攻击中毒状态的敌人时， 增加12%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+    攻击时， 有5%%的几率施放猛毒爆炸。 (冷却时间5秒)
+    攻击时， 有20%%的几率使敌人进入中毒状态10秒， 每0.5秒对中毒的敌人造成25点攻击力的伤害。 (若敌人高于Lv95， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	95
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	65
+
+[attack speed]
+	100
+
+[price]
+	171000
+
+[repair price]
+	136800
+
+[value]
+	136800
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1010	907
+
+[equipment magical attack]
+	914	821
+
+[separate attack]
+	584	386
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	134
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	42	0
+
+[layer variation]
+	2791
+	`bglovec1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	651
+	`bgloveb1`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	43	0
+
+[layer variation]
+	2151
+	`at_bglovea1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2791
+	`at_bglovec1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1351
+	`at_bglovex1`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		10000
+	[active status]
+		`poison`	95	500
+[/then]
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	18
+[/skill data up]
+
+[if]
+	[target active status]
+		`poison`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	12
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[passive object]
+		140191	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

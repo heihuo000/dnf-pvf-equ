@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`撒门的铃声[网咖]`
+
+[basic explain]
+	`攻击时以 3%%的机率让特定敌人进入混乱状态
+混乱状态的敌人攻击时敌人 15%%的附加伤害
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时， 以3%%机率5秒内使 300px范围内最接近的敌人陷入混乱状态。 （高于Lv64的对象得到的机率和效果减少， 低于Lv64的对象则会增加。决斗场内修正为 2.5秒）
+混乱状态的敌人攻击时敌人15%%的附加伤害（决斗场内8%% 附加伤害）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	60
+
+[magical attack]
+	43
+
+[attack speed]
+	-100
+
+[price]
+	102400
+
+[repair price]
+	86016
+
+[value]
+	81920
+
+[equipment physical attack]
+	488	447
+
+[equipment magical attack]
+	695	637
+
+[separate attack]
+	360	242
+
+[magical critical hit]
+	5
+
+[icon]
+	`Item/weapon/thief/wand.img`	73
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	10	0
+
+[layer variation]
+	2790
+	`wandc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`wandd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`wandx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`WAND_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`wand`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy near`	300
+	[duration]
+		5000
+	[reduce duration to human armor at pvp module]
+		50
+	[probability]
+		3
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`confuse`	64	1
+[/then]
+
+[if]
+	[target active status]
+		`confuse`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			7500
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy near`	300
+		[duration]
+			5000
+		[reduce duration to human armor at pvp module]
+			50
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			80
+		[active status]
+			`confuse`	64	1
+	[/then]
+	[if]
+		[target active status]
+			`confuse`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	8
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`牛头械王的改良战斧`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入眩晕状态2秒。
+ 
+    攻击时， 附加12%%的伤害。
+ 
+    普通攻击的最后一击可以对前方敌人施放闪电， 但需要消耗1个无色小晶块。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    破招攻击时， 附加22%%的伤害。
+    普通攻击的最后一击时， 可以向前方3个方向发动闪电攻击， 但需要消耗1个无色小晶块。 (冷却时间3秒)
+    被闪电命中的敌人， 有50%%的几率进入感电状态7秒； 若攻击感电状态的敌人， 则每次攻击都会附加1000点伤害。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1093	977
+
+[equipment magical attack]
+	774	692
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/priest/axe/axe.img`	91
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	29	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		3
+	[active status]
+		`stun`	90
+[/then]
+
+[if]
+	[my state]
+		`final attack`
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[consume item]
+		3037	1
+	[probability]
+		100
+	[passive object]
+		48533	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	12
+[/skill data up]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	29	0
+
+[layer variation]
+	2790
+	`at_axec`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_axex`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_axed`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

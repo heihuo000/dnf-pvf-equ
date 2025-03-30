@@ -1,0 +1,154 @@
+#PVF_File
+
+[name]
+	`拉尔夫的安息[网咖]`
+
+[basic explain]
+	`攻击时以 2%%的机率让敌人进入中毒状态
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以2%%的机率8秒内让敌人呈现中毒状态， 每0.5秒以84的攻击力给予伤害。 （高于Lv40的对象得到的机率减少， 低于Lv40的对象则会增加。）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[HP regen speed]
+	40
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[equipment physical attack]
+	357	323
+
+[equipment magical attack]
+	378	342
+
+[separate attack]
+	245	164
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	45	2
+[/skill levelup]
+
+[poison resistance]
+	15
+
+[icon]
+	`Item/weapon/thief/dagger.img`	39
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	9	5
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		12000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		8000
+	[probability]
+		2
+	[active status]
+		`poison`	40	1350
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

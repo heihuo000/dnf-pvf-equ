@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`突击队长的战斗拳套`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)
+ 
+    攻击时， 附加10%%的光属性伤害。
+攻击速度 +7%%`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	170
+
+[move speed]
+	50
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	956	855
+
+[equipment magical attack]
+	865	773
+
+[separate attack]
+	552	363
+
+[skill levelup]
+	`[fighter]`	37	3
+	`[at fighter]`	37	3
+	`[fighter]`	91	2
+	`[at fighter]`	91	2
+	`[fighter]`	39	2
+	`[at fighter]`	39	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/bglove/bglove.img`	82
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	23	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	24	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		5
+	[active status]
+		`stun`	90
+[/then]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`light`
+		`%`	10
+[/then]
+
+[required skill]
+	34
+
+[possible kiri protect]

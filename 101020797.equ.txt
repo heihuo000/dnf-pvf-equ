@@ -1,0 +1,350 @@
+#PVF_File
+
+[name]
+	`天道无为钝器`
+
+[basic explain]
+	`力量、 智力 +15%%
+体力、 精神 +15%%
+ 
+属性强化超过150时， 赋予自身对应的属性攻击。
+攻击时， 附加30%%的伤害。
+攻击时， 额外增加40%%的伤害增加量。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`力量、 智力 +15%%
+体力、 精神 +15%%
+ 
+属性强化超过150时， 赋予自身对应的属性攻击。
+攻击时， 附加30%%的伤害。
+攻击时， 额外增加40%%的伤害增加量。
+    攻击时， 有2%%的几率使敌人进入眩晕状态2秒。 (若敌人高于Lv95， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	96
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	95
+
+[physical attack]
+	106
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[anti evil]
+	500
+
+[price]
+	181800
+
+[repair price]
+	145440
+
+[value]
+	145440
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1171	1016
+
+[equipment magical attack]
+	1011	878
+
+[separate attack]
+	657	426
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/club/club.img`	174
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	51	2
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	51	2
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	48	2
+
+[layer variation]
+	2150
+	`at_cluba`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	650
+	`at_clubb`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_clubx`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`BLUNT_TOUCH`
+
+[durability]
+	45
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[level]`	0	`+`	400
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	30
+	`[all]`	254	`[dungeon type]`	`[level]`	0	`+`	15
+	`[all]`	254	`[dungeon type]`	`[level]`	1	`+`	15
+	`[all]`	254	`[dungeon type]`	`[level]`	2	`+`	15
+	`[all]`	254	`[dungeon type]`	`[level]`	3	`+`	15
+[/skill data up]
+
+[if]
+	[is stat]
+		`myself`	-1
+		`fire attack`
+		`>`	150
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		4000
+[/then]
+
+[if]
+	[is stat]
+		`myself`	-1
+		`water attack`
+		`>`	150
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		4001
+[/then]
+
+[if]
+	[is stat]
+		`myself`	-1
+		`light attack`
+		`>`	150
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		4002
+[/then]
+
+[if]
+	[is stat]
+		`myself`	-1
+		`dark attack`
+		`>`	150
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		10000
+	[appendage]
+		4003
+[/then]
+
+[if]
+	[my appendage]
+		4000
+	[cooltime]
+		10000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[elemental weapon]
+		`fire`
+[/then]
+
+[if]
+	[my appendage]
+		4001
+	[cooltime]
+		10000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[my appendage]
+		4002
+	[cooltime]
+		10000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[elemental weapon]
+		`light`
+[/then]
+
+[if]
+	[my appendage]
+		4003
+	[cooltime]
+		10000
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		10000
+	[elemental weapon]
+		`dark`
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	95
+[/then]
+
+[possible kiri protect]
+
+[flavor text]
+	`    寂寞无为者，万物之本也。`

@@ -1,0 +1,205 @@
+#PVF_File
+
+[name]
+	`影丸[活动]`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入减速状态。
+    无法进行合成和分解。`
+
+[detail explain]
+	`攻击时以5%%的机率让敌人20秒内呈现钝化状态， 移动速度减少16%%， 攻击速度减少16%%。 （高于Lv40的对象得到的机率和效果减少， 低于Lv40的对象则会增加。）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[flavor text]
+	`    着名暗杀者卡克玛使用的刀。`
+
+[grade]
+	44
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	40
+
+[physical attack]
+	31
+
+[magical attack]
+	47
+
+[attack speed]
+	80
+
+[cast speed]
+	40
+
+[stuck]
+	1
+
+[price]
+	70400
+
+[repair price]
+	56320
+
+[value]
+	56320
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	399	361
+
+[equipment magical attack]
+	441	399
+
+[separate attack]
+	245	164
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	3
+
+[skill levelup]
+	`[swordman]`	13	1
+	`[swordman]`	16	1
+	`[swordman]`	75	1
+	`[common]`	188	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/swordman/katana.img`	20
+
+[field image]
+	`Item/FieldImage.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	3	3
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	3	3
+
+[layer variation]
+	2790
+	`katanac`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`katanab`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`KATANA_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`katana`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		5
+	[active status]
+		`slow`	40	16	16
+[/then]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	3	3
+
+[layer variation]
+	2150
+	`at_katanaa`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	650
+	`at_katanab`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_katanax`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`

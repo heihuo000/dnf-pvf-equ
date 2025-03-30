@@ -1,0 +1,278 @@
+#PVF_File
+
+[name]
+	`浊影之息 - 狂疾之靴`
+
+[basic explain]
+	`    攻击时， 有7%%的几率使敌人进入出血、 中毒、 灼伤、 感电、 冰冻、 眩晕、 束缚、 石化、 诅咒、 混乱、 减速、 失明中任意一种异常状态。
+ 
+    攻击异常状态的敌人， 会使自身增加4点暗属性强化， 以及2%%的攻击速度、移动速度和施放速度。`
+
+[detail explain]
+	`    攻击时， 有7%%的几率使敌人进入出血、 中毒、 灼伤、 感电、 冰冻、 眩晕、 束缚、 石化、 诅咒、 混乱、 减速、 失明中任意一种异常状态5秒。
+ - 出血、 中毒、 灼伤状态持续5秒； 该状态下的敌人， 每0.5秒受到2333点伤害。
+ - 感电状态持续5秒； 若攻击感电状态的敌人， 则每次攻击都会附加2333点伤害。
+ - 诅咒状态持续5秒； 诅咒状态下的敌人， 将减少67点力量、 体力、 智力和精神。
+ - 减速状态持续5秒； 减速状态下的敌人， 将减少15%%的移动速度和10%%的攻击速度。
+ - 失明状态持续5秒； 失明状态下的敌人， 会减少90%%的视野和20%%的命中率。
+ - 石化、 冰冻、 眩晕、 束缚、 混乱状态持续5秒。
+(若敌人高于Lv90， 则减少该装备的冰冻、 眩晕、 束缚、 石化、 诅咒、 混乱、 减速和失明异常状态的发动几率和效果； 反之， 则增加几率和效果)
+ 
+    攻击异常状态的敌人， 增加自身4点暗属性强化以及2%%的攻击速度、 移动速度和施放速度。 (最多重叠10次；冷却时间20秒)`
+
+[flavor text]
+	`    拥有如此强大的力量， 竟然只不过是个幻影……`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	22
+
+[magical attack]
+	22
+
+[physical defense]
+	25
+
+[move speed]
+	40
+
+[price]
+	90000
+
+[repair price]
+	72000
+
+[value]
+	72000
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	2940	2730
+
+[icon]
+	`item/new_equipment/06_plate/shoes/plate_shoes.img`	20
+
+[field image]
+	`Item/field_equip.img`	19
+
+[equipment type]
+	`[shoes]`	19
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	2200
+
+[item group name]
+	`mt shoes`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`curse`	90	67	67	67	67
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`bleeding`	90	14000
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`burn`	90	14000	0	0	0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`poison`	90	14000
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`lightning`	90	2333
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`freeze`	90
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`hold`	90
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			8.0
+		[active status]
+			`stone`	90	15775
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			9.0
+		[active status]
+			`blind`	90	90	20
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			9.0
+		[active status]
+			`slow`	90	15	10
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			9.0
+		[active status]
+			`confuse`	90	1
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			7
+		[duration]
+			5000
+		[then probability]
+			9.0
+		[active status]
+			`stun`	90
+	[/then]
+[/multiple then]
+
+[if]
+	[event attack success]
+		1
+	[target active status]
+		`any`
+	[cooltime]
+		1000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[appendage]
+		1513
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,170 @@
+#PVF_File
+
+[name]
+	`斯麦巴的门牙[网咖]`
+
+[basic explain]
+	`攻击时以 3%%的机率让敌人进入中毒状态
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以3%%的机率7秒内让敌人呈现中毒状态， 每0.5秒以35的攻击力给予伤害。 （高于Lv10的对象得到的机率减少， 低于Lv10的对象则会增加。）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	12
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	10
+
+[magical attack]
+	12
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[price]
+	19200
+
+[repair price]
+	15360
+
+[value]
+	15360
+
+[equipment physical attack]
+	156	118
+
+[equipment magical attack]
+	189	143
+
+[separate attack]
+	90	56
+
+[skill levelup]
+	`[fighter]`	5	1
+	`[at fighter]`	5	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	5
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2790
+	`glovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	0	3
+
+[layer variation]
+	2150
+	`at_glovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_glovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_glovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		10500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		3
+	[active status]
+		`poison`	10	500
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

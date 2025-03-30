@@ -1,0 +1,203 @@
+#PVF_File
+
+[name]
+	`name_26774`
+
+[name2]
+	`DNF of Wonder Land ( Alicia )`
+
+[explain]
+	`explain_26774`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[no random]
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	217
+
+[custom animation]
+	`TitleAnimation/wonderland_dnf.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[physical attack]
+	20
+
+[magical attack]
+	20
+
+[move speed]
+	20
+
+[attack speed]
+	20
+
+[cast speed]
+	20
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`%`	50
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`bleeding`	-1	7
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		2
+	[active status]
+		`poison`	-1	7
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		2000
+	[probability]
+		2
+	[active status]
+		`stun`	-1
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`bleeding`	-1	7
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		2
+	[active status]
+		`poison`	-1	7
+[/then]
+
+[move wav]
+	`NAME_TOUCH`
+
+[usable period]
+	30

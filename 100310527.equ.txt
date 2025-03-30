@@ -1,0 +1,122 @@
+#PVF_File
+
+[name]
+	`被囚者的染血手铐`
+
+[basic explain]
+	`    攻击时， 有5%%的几率投掷罗网。
+    该装备的罗网投掷时， 可增加自身30%%的物理暴击率和魔法暴击率， 效果持续30秒。
+    被攻击时， 可以使500px范围内的所有敌人进入束缚状态5秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率投掷罗网。 (冷却时间3秒)
+    该装备的罗网投掷时， 可增加自身30%%的物理暴击率和魔法暴击率， 效果持续30秒。 (最多重叠1次； 解除装备后效果消失)
+    被攻击时， 可以使500px范围内的所有敌人进入束缚状态5秒。 (冷却时间30秒； 若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    为了不让你离开我， 我只能这样了……  --疯狂的恋人A`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	37
+
+[physical defense]
+	93
+
+[anti evil]
+	10
+
+[repair price]
+	81600
+
+[price]
+	127400
+
+[value]
+	101920
+
+[creation rate]
+	155
+
+[equipment magical defense]
+	4800	4112
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	96
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		5000
+	[probability]
+		100
+	[active status]
+		`hold`	91
+[/then]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[equipment duration]
+		30000
+	[appendage]
+		842
+	[passive object]
+		48626	0	0	0	99	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

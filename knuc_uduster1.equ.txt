@@ -1,0 +1,356 @@
+#PVF_File
+
+[name]
+	`巨人的手套(APC)`
+
+[basic explain]
+	``
+
+[flavor text]
+	`经转移实验结果研制出冶炼制成拥有卓越力量的武器。`
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[icon mark]
+	`Item/IconMark.img`	68
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	58
+
+[magical attack]
+	47
+
+[attack speed]
+	-200
+
+[cast speed]
+	-200
+
+[move speed]
+	-200
+
+[MP MAX]
+	50
+
+[price]
+	104000
+
+[repair price]
+	87360
+
+[value]
+	83200
+
+[equipment physical attack]
+	706	649
+
+[equipment magical attack]
+	583	536
+
+[separate attack]
+	365	246
+
+[icon]
+	`Item/weapon/fighter/knuckle.img`	44
+
+[field image]
+	`Item/FieldImage.img`	15
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2790
+	`knucklec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`knuckleb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	2	3
+
+[layer variation]
+	2150
+	`at_knucklea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_knucklec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_knucklex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`KNUCKLE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	1900
+
+[item group name]
+	`knuckle`
+
+[cool time]
+	10000
+
+[if]
+	[my state]
+		`dash`
+	[time]
+		800	1	800
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		21031	0	0	0	30	0	``
+		48051	0	0	0	1	0	``
+	[/passive object]
+	[passive object]
+		8692	0	0	0	5	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	86
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		21031	0	0	0	30	0	``
+		48051	0	0	0	1	0	``
+	[/passive object]
+	[speech on]
+		0	2000
+		`粉碎吧！！！`
+	[/speech on]
+[/then]
+
+[if]
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		100
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	86
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[passive object]
+		21031	0	0	0	30	0	``
+		48051	0	0	0	1	0	``
+	[/passive object]
+	[speech on]
+		0	2000
+		`粉碎吧！！！`
+	[/speech on]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	86
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`stun`	50
+[/then]
+
+[if]
+	[skill]
+		`at fighter`	86
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`stun`	50
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	71
+	[/event use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	10000
+		`过来吧你！！！`
+	[/speech on]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	71
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[speech on]
+		0	2000
+		`死！！！`
+	[/speech on]
+[/then]
+
+[if]
+	[skill]
+		`fighter`	102
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		100
+	[reduce probability to human armor at pvp module]
+		100
+	[active status]
+		`weapon break`	40	30
+	[active status]
+		`armor break`	40	30
+[/then]
+
+[if]
+	[event use skill]
+		`fighter`	190
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[reduce probability to human armor at pvp module]
+		95
+	[passive object]
+		21031	0	0	0	30	0	``
+		48051	0	0	0	1	0	``
+	[/passive object]
+	[passive object]
+		8692	0	0	0	5	0	``
+	[/passive object]
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		60000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		60000
+	[buff]
+		`superarmor`
+[/then]
+
+[skill data up]
+	`[fighter]`	71	`[all]`	`[level]`	5	`%`	-50
+	`[fighter]`	71	`[all]`	`[level]`	1	`%`	100
+	`[fighter]`	71	`[all]`	`[cooltime]`	0	`%`	-75
+[/skill data up]
+
+[possible kiri protect]

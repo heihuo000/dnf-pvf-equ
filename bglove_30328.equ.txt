@@ -1,0 +1,216 @@
+#PVF_File
+
+[name]
+	`地狱的手套-极热地狱[网咖]`
+
+[basic explain]
+	`攻击时以 3%% 的机率让敌人进入灼伤状态
+灼伤状态的敌人攻击时敌人10%%的附加伤害
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以3%%的机率5秒内让敌人陷入灼伤状态， 每0.5秒以145的攻击力给予伤害， 四周的敌人每2秒以26的攻击力给予伤害。 （高于Lv64的对象得到的机率减少， 低于Lv64的对象则会增加。）
+灼伤状态的敌人攻击时敌人 10%%的附加伤害（决斗场内5%% 附加伤害）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	64
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	60
+
+[physical attack]
+	43
+
+[attack speed]
+	100
+
+[price]
+	115200
+
+[repair price]
+	96768
+
+[value]
+	92160
+
+[equipment physical attack]
+	634	582
+
+[equipment magical attack]
+	574	526
+
+[separate attack]
+	360	242
+
+[icon]
+	`Item/weapon/fighter/bglove.img`	47
+
+[field image]
+	`Item/field_weapon.img`	0
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2790
+	`bglovec`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`bgloveb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	6	0
+
+[layer variation]
+	2150
+	`at_bglovea`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_bglovec`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_bglovex`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	39
+
+[weight]
+	2100
+
+[item group name]
+	`bglove`
+
+[cool time]
+	10000
+
+[required skill]
+	34
+
+[elemental property]
+	`[fire element]`
+
+[if]
+	[cooltime]
+		7500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		3
+	[active status]
+		`burn`	64	1450	65	1	2000
+[/then]
+
+[if]
+	[target active status]
+		`burn`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	10
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			7500
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			5000
+		[probability]
+			3
+		[reduce probability to human armor at pvp module]
+			80
+		[active status]
+			`burn`	64	1450	65	1	2000
+	[/then]
+	[if]
+		[target active status]
+			`burn`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	5
+	[/then]
+[/pvp]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

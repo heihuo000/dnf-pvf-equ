@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`哈尼克之心`
+
+[basic explain]
+	`在[比尔马克帝国试验场]攻击时， 附加25%%的伤害。
+每5秒可以使250px范围内的所有敌人进入出血状态。
+    攻击出血状态的敌人， 可使自身增加25点力量和智力， 并增加2%%的攻击速度和移动速度。`
+
+[detail explain]
+	`在[比尔马克帝国试验场]攻击时， 附加25%%的伤害。
+每5秒可以使250px范围内的所有敌人进入出血状态。
+    攻击出血状态的敌人， 可使自身增加25点力量和智力， 并增加2%%的攻击速度和移动速度。 (最多重叠15次；持续时间20秒)`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	53
+
+[magical attack]
+	53
+
+[physical defense]
+	53
+
+[magical defense]
+	53
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[bleeding resistance]
+	30
+
+[icon]
+	`Item/new_equipment/11_magicstone/magicstone.img`	83
+
+[field image]
+	`Item/field_equip.img`	23
+
+[equipment type]
+	`[magic stone]`	20
+
+[move wav]
+	`STONE_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`magic stone`
+
+[cool time]
+	10000
+
+[if]
+	[dungeon check]
+		201	1500
+	[/dungeon check]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		60000
+	[appendage]
+		2251
+[/then]
+
+[if]
+	[time]
+		5000	1	500
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[probability]
+		100
+	[duration]
+		5000
+	[active status]
+		`bleeding`	90	100
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,132 @@
+#PVF_File
+
+[name]
+	`冰雪公主的霜语项链`
+
+[basic explain]
+	`    施放技能时， 有5%%的几率使最近的敌人的250px范围内的所有敌人进入冰冻状态。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态。 `
+
+[detail explain]
+	`    施放技能时， 有5%%的几率使最近的敌人的250px范围内的所有敌人进入冰冻状态。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态3秒。  (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[flavor text]
+	`    我相信最后我们还是会在一起的……  --摘自已故公主的日记`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	37
+
+[magical defense]
+	93
+
+[MP regen speed]
+	10
+
+[price]
+	127400
+
+[anti evil]
+	10
+
+[repair price]
+	101920
+
+[value]
+	101920
+
+[creation rate]
+	200
+
+[equipment magical defense]
+	8160	7440
+
+[icon]
+	`item/new_equipment/08_necklace/necklace.img`	105
+
+[field image]
+	`Item/FieldImage.img`	6
+
+[equipment type]
+	`[amulet]`	21
+
+[move wav]
+	`NECKLACE_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`amulet`
+
+[cool time]
+	10000
+
+[MP regen speed]
+	1
+
+[water attack]
+	25
+
+[ice appendage]
+	40000	300	5000
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`enemy near`	250
+	[probability]
+		5
+	[duration]
+		2000
+	[active status]
+		`freeze`	91
+[/then]
+
+[set name]
+	`冰雪公主的霜语首饰 套装`
+
+[set item]
+	100310786	100310528	100320591
+[/set item]
+
+[set ability]
+	[water attack]
+		50
+	[water resistance]
+		35
+	[skill data up]
+		`[all]`	169	`[dungeon type]`	`[static]`	13	`+`	18
+	[/skill data up]
+	[fullset basic explain]
+		`    攻击时， 附加18%%的伤害。`
+[/set ability]
+
+[possible kiri protect]

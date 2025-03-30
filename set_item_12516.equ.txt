@@ -1,0 +1,76 @@
+#PVF_File
+
+[set name]
+	`圣物 : 荣耀的灵魂审判者  套装`
+
+[piece set ability]
+	2	
+	[physical attack]
+		55
+	[physical defense]
+		39
+	[magical attack]
+		55
+	[water resistance]
+		18
+	[MP regen speed]
+		8
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[probability]
+			2
+		[active status]
+			`haste`	44	12	12
+	[/then]
+	[parameter basic explain]
+		`    被攻击时， 有2%%的几率使自身进入加速状态20秒， 加速状态下增加12%%的移动速度和攻击速度。`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[skill data up]
+		`[swordman]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[swordman]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[fighter]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[fighter]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[gunner]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[gunner]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[mage]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[mage]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[priest]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[at gunner]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[at gunner]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[thief]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[thief]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[at fighter]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[at fighter]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[at mage]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[at mage]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[demonic swordman]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[demonic swordman]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[creator mage]`	254	`[dungeon type]`	`[level]`	16	`+`	6
+		`[creator mage]`	254	`[dungeon type]`	`[level]`	17	`+`	6
+		`[swordman]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[fighter]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[gunner]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[mage]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[priest]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[at gunner]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[thief]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[at fighter]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[at mage]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[demonic swordman]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+		`[creator mage]`	254	`[dungeon type]`	`[level]`	18	`+`	8
+	[/skill data up]
+	[parameter basic explain]
+		`    进入地下城时， 因圣物的祝福可以使自身增加6%%的攻击速度和移动速度， 以及8%%的施放速度。`
+[/piece set ability]

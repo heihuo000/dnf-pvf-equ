@@ -1,0 +1,192 @@
+#PVF_File
+
+[name]
+	`黑暗巨蝎的嗜血东方棍`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入出血状态3秒。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入出血状态3秒； 出血状态下的敌人， 每0.5秒会受到120点伤害。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间2秒)`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[magical attack]
+	29
+
+[attack speed]
+	50
+
+[stuck]
+	-2.0
+
+[stuck resistance]
+	30
+
+[hit recovery]
+	100
+
+[need material]
+	10149508	15
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	247	209
+
+[equipment magical attack]
+	260	220
+
+[equipment physical defense]
+	240	240
+
+[separate attack]
+	147	95
+
+[skill levelup]
+	`[fighter]`	50	1
+	`[at fighter]`	50	1
+	`[fighter]`	22	1
+	`[at fighter]`	22	1
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	123
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[duration]
+		3000
+	[active status]
+		`bleeding`	24	720
+[/then]
+
+[possible kiri protect]

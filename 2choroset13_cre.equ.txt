@@ -1,0 +1,252 @@
+#PVF_File
+
+[set name]
+	`冥炎之灵  套装`
+
+[piece set ability]
+	1	
+	[skill data up]
+		`[swordman]`	18	`[dungeon type]`	`[level]`	3	`%`	10
+		`[swordman]`	18	`[dungeon type]`	`[level]`	4	`%`	10
+		`[swordman]`	18	`[dungeon type]`	`[level]`	5	`%`	10
+		`[swordman]`	18	`[dungeon type]`	`[level]`	6	`%`	10
+		`[swordman]`	18	`[dungeon type]`	`[level]`	7	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[mp]`	0	`%`	-50
+		`[swordman]`	82	`[dungeon type]`	`[level]`	1	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	4	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	7	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	8	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	9	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	10	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	11	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	12	`%`	10
+		`[swordman]`	82	`[dungeon type]`	`[level]`	0	`%`	-15
+		`[swordman]`	82	`[dungeon type]`	`[cooltime]`	0	`%`	-15
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼影步]魔法攻击力 +10%%
+[冥炎之卡洛]冷却时间 -15%%
+[冥炎之卡洛]攻击力 +10%%
+[冥炎之卡洛]持续时间 -20%%
+[冥炎之卡洛]MP消耗量 -50%%`
+[/piece set ability]
+
+[piece set ability]
+	2	
+	[skill data up]
+		`[swordman]`	18	`[dungeon type]`	`[level]`	3	`%`	15
+		`[swordman]`	18	`[dungeon type]`	`[level]`	4	`%`	15
+		`[swordman]`	18	`[dungeon type]`	`[level]`	5	`%`	15
+		`[swordman]`	18	`[dungeon type]`	`[level]`	6	`%`	15
+		`[swordman]`	18	`[dungeon type]`	`[level]`	7	`%`	15
+		`[swordman]`	82	`[dungeon type]`	`[level]`	1	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	4	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	7	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	8	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	9	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	10	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	11	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	12	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	0	`%`	-20
+		`[swordman]`	82	`[dungeon type]`	`[cooltime]`	0	`%`	-35
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼影步]魔法攻击力 +25%%
+[冥炎之卡洛]冷却时间 -35%%
+[冥炎之卡洛]攻击力 +25%%
+[冥炎之卡洛]持续时间 -20%%`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[use skill]
+			`swordman`	25
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[passive object]
+			99997	0	0	0	0	0	``
+			99021	0	0	0	0	-1	``
+			99121	0	0	0	0	-1	``
+		[/passive object]
+		[stat]
+			`physical attack`
+			`%`	20
+		[stat]
+			`magical attack`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	41
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99998	0	0	0	0	0	``
+			99022	0	0	0	0	-1	``
+			99122	0	0	0	0	-1	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	36
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99999	0	0	0	0	0	``
+			99023	0	0	0	0	-1	``
+			99123	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			147
+	[/then]
+	[if]
+		[my appendage]
+			147
+		[target active status]
+			`freeze`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	75
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999100	0	0	0	0	0	``
+			99024	0	0	0	0	-1	``
+			99124	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			142
+	[/then]
+	[if]
+		[my appendage]
+			142
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			6000
+		[passive object]
+			99026	0	0	0	0	-1	``
+		[/passive object]
+		[active status]
+			`any`	120
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	44
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999104	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	60
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999102	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	111
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999101	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	95
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			660058	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	241
+		[cooltime]
+			25000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			100
+		[summon monster]
+			64053	-1	1
+	[/then]
+	[cast speed]
+		80
+	[skill data up]
+		`[swordman]`	18	`[dungeon type]`	`[level]`	10	`%`	15
+		`[swordman]`	18	`[dungeon type]`	`[level]`	3	`%`	25
+		`[swordman]`	18	`[dungeon type]`	`[level]`	4	`%`	25
+		`[swordman]`	18	`[dungeon type]`	`[level]`	5	`%`	25
+		`[swordman]`	18	`[dungeon type]`	`[level]`	6	`%`	25
+		`[swordman]`	18	`[dungeon type]`	`[level]`	7	`%`	25
+		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	40
+		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	40
+		`[swordman]`	82	`[dungeon type]`	`[level]`	4	`%`	40
+		`[swordman]`	82	`[dungeon type]`	`[level]`	0	`%`	-40
+		`[swordman]`	82	`[dungeon type]`	`[cooltime]`	0	`%`	-50
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼影步]技能攻击力增加量 +15%%
+[鬼影步]魔法攻击力 +25%%
+[冥炎之卡洛]冷却时间 -50%%
+[冥炎之卡洛]攻击力 +40%%
+[冥炎之卡洛]持续时间 -40%%
+[王者号令 : 吉格降临]神官吉格召唤数 +1`
+[/piece set ability]

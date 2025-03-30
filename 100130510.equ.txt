@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`禁忌之影护腿`
+
+[basic explain]
+	`每5秒可以使500px范围内的所有敌人进入中毒状态， 效果持续10秒。
+施放技能时， 可以增加15%%的最终伤害或者技能攻击力， 效果持续40秒。`
+
+[detail explain]
+	`每5秒可以使500px范围内的所有敌人进入中毒状态， 效果持续10秒； 中毒状态下的敌人每0.5秒受到2400点伤害。 
+施放技能时， 可以增加15%%的最终伤害或者技能攻击力， 效果持续40秒。 (冷却时间40秒； 最多叠加1次； 解除装备后效果消失)`
+
+[grade]
+	90
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	44
+
+[magical attack]
+	32
+
+[physical defense]
+	41
+
+[price]
+	134400
+
+[repair price]
+	107520
+
+[value]
+	107520
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	4240	3880
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	63
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		5000	1	0
+	[change status]
+		`hp`
+		`>=`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		10000
+	[active status]
+		`poison`	96	120
+[/then]
+
+[if]
+	[casting]
+		1
+	[cooltime]
+		40000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		40000
+	[probability]
+		100
+	[appendage]
+		2520
+[/then]
+
+[possible kiri protect]
+
+[anti evil]
+	30

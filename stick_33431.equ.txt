@@ -1,0 +1,198 @@
+#PVF_File
+
+[name]
+	`玉龙奔雷棍[网咖]`
+
+[basic explain]
+	`攻击时以 5%%的机率让敌人进入感电状态
+（决斗场内修正为 2%%机率）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以5%%的机率15秒内让敌人陷入触电状态， 每次攻击时以164的攻击力给予追加伤害。 （高于Lv50的对象得到的机率减少， 低于L50的对象则会增加。）
+（决斗场内修正为 2%% 机率。）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	50
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[attack speed]
+	50
+
+[stuck]
+	-1
+
+[HP MAX]
+	200
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[equipment physical attack]
+	557	514
+
+[equipment magical attack]
+	464	428
+
+[separate attack]
+	311	208
+
+[skill levelup]
+	`[mage]`	5	1
+	`[mage]`	9	2
+	`[at mage]`	136	1
+	`[at mage]`	101	2
+[/skill levelup]
+
+[light resistance]
+	5
+
+[icon]
+	`Item/weapon/mage/pole.img`	32
+
+[field image]
+	`Item/field_weapon.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2150
+	`at_polea`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_poled`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	6	3
+
+[layer variation]
+	2790
+	`polec`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`poled`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`POLE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2400
+
+[item group name]
+	`pole`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[light element]`
+
+[if]
+	[cooltime]
+		22500
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		60
+	[active status]
+		`lightning`	50	215
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

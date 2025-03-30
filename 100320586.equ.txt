@@ -1,0 +1,123 @@
+#PVF_File
+
+[name]
+	`冰雪精灵的凝霜指环`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入冰冻状态， 效果持续3秒。
+    被攻击时， 有20%%的几率通过消耗1个蓝色小晶块召唤出1只Lv81的中级精灵拉特利亚， 效果持续60秒。 (冷却时间60秒)`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入冰冻状态， 效果持续3秒。 (若敌人高于Lv81， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    被攻击时， 有20%%的几率通过消耗1个蓝色小晶块召唤出1只Lv81的中级精灵拉特利亚， 效果持续60秒。 (冷却时间60秒； 召唤的怪物只能同时存在1只， 若召唤的怪物受到较大伤害， 则召唤时间结束前就会消失)`
+
+[flavor text]
+	`    你听到什么声音了吗？好像有人在说话......  ——敏泰`
+
+[grade]
+	81
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	70
+
+[magical attack]
+	70
+
+[need material]
+	3285	3000
+
+[price]
+	113400
+
+[repair price]
+	90720
+
+[value]
+	90720
+
+[creation rate]
+	155
+
+[equipment magical defense]
+	2944	2656
+
+[water resistance]
+	18
+
+[water attack]
+	31
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	139
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[duration]
+		3000
+	[active status]
+		`freeze`	81
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		20
+	[duration]
+		60000
+	[consume item]
+		3036	1
+	[summon monster]
+		60043	81	1
+[/then]
+
+[possible kiri protect]

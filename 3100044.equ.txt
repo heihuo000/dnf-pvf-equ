@@ -1,0 +1,124 @@
+#PVF_File
+
+[name]
+	`螭吻之青云短靴`
+
+[basic explain]
+	`攻击时， 额外增加11%%的伤害增加量。 
+攻击时， 有5%%的几率使敌人进入减速状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入减速状态5秒； 减速状态下的敌人， 会减少5%%的移动速度和攻击速度。 (若敌人高于Lv101， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    落叶聚还散， 寒鸦栖复惊。`
+
+[grade]
+	95
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[part set index]
+	30222
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[need material]
+	3285	1500
+
+[minimum level]
+	95
+
+[physical attack]
+	28
+
+[magical attack]
+	28
+
+[magical defense]
+	31
+
+[all elemental attack]
+	14
+
+[all elemental resistance]
+	7
+
+[equipment physical defense]
+	1472	1164
+
+[move speed]
+	40
+
+[price]
+	76800
+
+[repair price]
+	61440
+
+[value]
+	61440
+
+[icon]
+	`item/new_equipment/03_leather/shoes/leather_shoes.img`	71
+
+[field image]
+	`Item/FieldImage.img`	4
+
+[equipment type]
+	`[shoes]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	900
+
+[item group name]
+	`lt shoes`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[level]`	0	`+`	110
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[active status]
+		`slow`	101	5	5
+[/then]
+
+[possible kiri protect]
+
+[creation rate]
+	50
+
+[anti evil]
+	100

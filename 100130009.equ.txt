@@ -1,0 +1,143 @@
+#PVF_File
+
+[name]
+	`星云迷踪护腿`
+
+[basic explain]
+	`    攻击时， 有5%%的几率进入失明状态15秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身进入失明状态， 效果持续15秒。 (冷却时间3秒； 若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	39
+
+[physical defense]
+	35
+
+[magical attack]
+	28
+
+[price]
+	102000
+
+[repair price]
+	85680
+
+[value]
+	81600
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	3720	3480
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	10
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[active status]
+		`blind`	86	50	5
+[/then]
+
+[all skill item]
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			40
+		[upper bound level]
+			60
+		[value]
+			2
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[all skill item]
+	[item growtype]
+		`[all]`	0
+	[skill apply condition]
+		[skill group]
+			`[all]`
+		[lower bound level]
+			60
+		[upper bound level]
+			60
+		[value]
+			2
+		[extra condition]
+			`[except for ex skill]`
+		[/extra condition]
+	[/skill apply condition]
+	[skill phase]
+		`[all]`
+[/all skill item]
+
+[part set index]
+	11337
+
+[possible kiri protect]

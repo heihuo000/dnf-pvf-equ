@@ -1,0 +1,120 @@
+#PVF_File
+
+[set name]
+	`海神谜咒之愤怒  套装`
+
+[piece set ability]
+	2	
+	[water attack]
+		12
+	[if]
+		[time]
+			60000	1	1000
+		[cooltime]
+			60000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[consume item]
+			3036	1
+		[duration]
+			60000
+		[elemental weapon]
+			`water`
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	3
+	[/then]
+	[parameter basic explain]
+		`    装备后， 每60秒通过消耗1个蓝色小晶块对武器赋予冰属性， 效果持续60秒。
+    攻击时， 附加3%%的伤害。`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[HP MAX]
+		250
+	[MP MAX]
+		250
+	[attack speed]
+		30
+	[move speed]
+		20
+	[cast speed]
+		30
+	[if]
+		[time]
+			10000	1	5000
+	[/if]
+	[then]
+		[target]
+			`enemy near`	500
+		[duration]
+			10000
+		[active status]
+			`curse`	90	50	50	50	50
+	[/then]
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	17
+	[/then]
+	[if]
+		[cooltime]
+			5000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			5000
+		[active status]
+			`curse`	90	50	50	50	50
+	[/then]
+	[parameter basic explain]
+		`    攻击时， 附加17%%的伤害。
+    装备后， 每10秒会使500px范围内最近的1个敌人进入诅咒状态10秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。
+    攻击时， 使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间1秒)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[if]
+		[cooltime]
+			5000
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			5
+		[passive object]
+			140212	0	0	0	99	0	` `
+		[/passive object]
+	[/then]
+	[skill data up]
+		`[all]`	254	`[dungeon type]`	`[level]`	26	`+`	-30
+	[/skill data up]
+	[parameter basic explain]
+		`    所有技能冷却时间 -30%%
+    攻击时， 有5%%的几率使自身周围500px范围内发动被诅咒的海神之怒效果。 (冷却时间5秒)`
+[/piece set ability]

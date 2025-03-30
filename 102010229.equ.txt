@@ -1,0 +1,213 @@
+#PVF_File
+
+[name]
+	`哈迪的血风暴臂铠`
+
+[basic explain]
+	`    施放[暴力抓取]后， 在技能持续时间内攻击时， 有20%%的几率使敌人进入出血状态5秒。
+    攻击出血状态的敌人时， 附加20%%的伤害。`
+
+[detail explain]
+	`    施放[暴力抓取]后， 在技能持续时间内攻击时， 有20%%的几率使敌人进入出血状态5秒； 出血状态下的敌人， 每0.5秒受到50点伤害。 (装备解除后效果消失)
+    攻击出血状态的敌人时， 附加20%%的伤害。`
+
+[flavor text]
+	`据说哈迪在未进入悲鸣洞穴之前也是个美男子。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	92
+
+[attack speed]
+	-80
+
+[stuck]
+	-1
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	1093	977
+
+[equipment magical attack]
+	819	733
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	109
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	34	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[if]
+	[use skill]
+		`fighter`	50
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		`skill level info`	50	0	-1
+	[appendage]
+		692
+[/then]
+
+[if]
+	[use skill]
+		`at fighter`	50
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		`skill level info`	50	0	-1
+	[appendage]
+		692
+[/then]
+
+[if]
+	[my appendage]
+		692
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[duration]
+		5000
+	[active status]
+		`bleeding`	90	500
+[/then]
+
+[if]
+	[target active status]
+		`bleeding`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[possible kiri protect]

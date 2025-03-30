@@ -1,0 +1,80 @@
+#PVF_File
+
+[set name]
+	`圣物 : 大地女神的赤铜重甲  套装`
+
+[piece set ability]
+	2	
+	[HP MAX]
+		165
+	[MP MAX]
+		165
+	[physical attack]
+		25
+	[magical attack]
+		25
+	[physical defense]
+		25
+	[fire resistance]
+		12
+	[if]
+		[cooltime]
+			1000
+		[hit]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			8000
+		[reduce duration to human armor at pvp module]
+			75
+		[probability]
+			2
+		[reduce probability at pvp module]
+			100
+		[active status]
+			`sleep`	19
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`move speed`
+			`+`	30
+	[/then]
+	[if]
+		[module]
+			`[dungeon type]`
+			`[war room]`
+		[/module]
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[stat by condition]
+			`attack speed`
+			`+`	30
+		[stat by condition]
+			`cast speed`
+			`+`	50
+	[/then]
+	[parameter basic explain]
+		`    被击时， 有2%%的几率使敌人进入睡眠状态8秒。 (若敌人高于Lv19， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    进入地下城时， 因传承的祝福增加3%%的移动速度。`
+[/piece set ability]

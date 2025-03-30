@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`欧贝斯的绿十字架[网咖]`
+
+[basic explain]
+	`施展时以 2%%的机率让自己进入祝福状态
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`施展时以 2%%的机率20秒内让自己进入祝福状态， 力量增加 39， 体力增加39， 智力增加39， 精神增加39。
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	56
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	50
+
+[physical defense]
+	48
+
+[magical attack]
+	38
+
+[magical defense]
+	48
+
+[cast speed]
+	20
+
+[move speed]
+	10
+
+[HP regen speed]
+	35
+
+[MP regen speed]
+	8
+
+[price]
+	89600
+
+[repair price]
+	75264
+
+[value]
+	71680
+
+[equipment physical attack]
+	516	476
+
+[equipment magical attack]
+	490	452
+
+[equipment physical defense]
+	560	550
+
+[equipment magical defense]
+	560	550
+
+[separate attack]
+	311	208
+
+[skill levelup]
+	`[priest]`	26	1
+	`[priest]`	45	1
+	`[priest]`	115	1
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/cross.img`	29
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	1	6
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		20000
+	[casting]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`bless`	45	39	39	39	39
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	1	6
+
+[layer variation]
+	2790
+	`at_crossc`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_crossx`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_crossd`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

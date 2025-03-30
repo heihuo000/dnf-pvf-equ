@@ -1,0 +1,206 @@
+#PVF_File
+
+[name]
+	`黑色透视护肩`
+
+[basic explain]
+	`    每30秒对自身生成污染物质并发动Buff效果， 效果持续30秒。
+ 
+    自身在中毒状态下， 被击时减少20%%的所受伤害， 并发动霸体护甲， 效果持续15秒。
+ 
+    被攻击时， 有50%%的几率发动猛毒爆炸。`
+
+[detail explain]
+	`    每30秒对自身生成污染物质并发动Buff效果， 效果持续30秒。
+ - 攻击时， 增加12%%的伤害。 (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)
+ - 可以使自身进入中毒状态30秒， 中毒状态下每0.5秒对敌人造成5点攻击力的伤害。
+ 
+    自身在中毒状态下， 被击时减少20%%的所受伤害， 并发动霸体护甲， 效果持续15秒。 (冷却时间15秒)
+ 
+    被攻击时， 有50%%的几率发动猛毒爆炸。 (冷却时间5秒)
+(解除装备后效果消失)`
+
+[grade]
+	95
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	32
+
+[magical attack]
+	32
+
+[magical defense]
+	35
+
+[price]
+	76000
+
+[repair price]
+	60800
+
+[value]
+	60800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1648	1536
+
+[icon]
+	`item/new_equipment/03_leather/neck/leather_neck.img`	57
+
+[field image]
+	`Item/FieldImage.img`	2
+
+[equipment type]
+	`[shoulder]`	18
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1100
+
+[item group name]
+	`lt shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		500	1	0
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		30000
+	[appendage]
+		887
+	[passive object]
+		141198	0	0	0	0	-1	``
+	[/passive object]
+[/then]
+
+[if]
+	[my appendage]
+		887
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	12
+[/then]
+
+[if]
+	[my appendage]
+		887
+	[time]
+		500	1	0
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[active status]
+		`poison`	95	100
+[/then]
+
+[if]
+	[my active status]
+		`poison`
+	[time]
+		500	1	0
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[buff]
+		`superarmor`
+[/then]
+
+[if]
+	[my active status]
+		`poison`
+	[time]
+		500	1	0
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[add absolute defense percent]
+		`all`	20
+[/then]
+
+[if]
+	[hit]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		50
+	[passive object]
+		140191	0	0	0	0	0	``
+	[/passive object]
+[/then]
+
+[possible kiri protect]

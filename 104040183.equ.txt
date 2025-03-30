@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`毒龙石弓 - 弑心`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入中毒状态3秒。
+    攻击中毒状态的敌人时， 附加5%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒会受到160点伤害。 (若敌人高于Lv24时， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间2秒)
+    攻击中毒状态的敌人时， 附加5%%的伤害。`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[magical attack]
+	10
+
+[attack speed]
+	20
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	15
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	204	162
+
+[equipment magical attack]
+	227	180
+
+[separate attack]
+	147	95
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	118
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	37	0
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability at pvp module]
+		80
+	[duration]
+		3000
+	[active status]
+		`poison`	24	960
+[/then]
+
+[if]
+	[attack success]
+		1
+	[target active status]
+		`poison`
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	5
+[/then]
+
+[possible kiri protect]

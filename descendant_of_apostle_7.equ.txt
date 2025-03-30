@@ -1,0 +1,161 @@
+#PVF_File
+
+[name]
+	`name_26731`
+
+[name2]
+	`Descendants of Apostle`
+
+[explain]
+	`explain_26731`
+
+[grade]
+	1
+
+[attach type]
+	`[sealing]`
+
+[rarity]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[no random]
+
+[weight]
+	1
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	410
+
+[custom animation]
+	`TitleAnimation/descendant_of_apostle.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[HP MAX]
+	200
+
+[MP MAX]
+	200
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical attack]
+	30
+
+[magical defense]
+	30
+
+[move speed]
+	30
+
+[attack speed]
+	30
+
+[cast speed]
+	30
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		1
+	[stat]
+		`physical attack`
+		`+`	30
+	[stat]
+		`physical defense`
+		`+`	30
+	[stat]
+		`magical attack`
+		`+`	30
+	[stat]
+		`magical defense`
+		`+`	30
+[/then]
+
+[physical critical hit]
+	3
+
+[magical critical hit]
+	3
+
+[stuck]
+	-2
+
+[move wav]
+	`NAME_TOUCH`
+
+[if]
+	[cooltime]
+		40000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		30000
+	[probability]
+		5
+	[stat]
+		`attack speed`
+		`+`	50
+	[stat]
+		`cast speed`
+		`+`	50
+	[stat]
+		`move speed`
+		`+`	50
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		4000
+	[probability]
+		10
+	[active status]
+		`stun`	-1
+[/then]

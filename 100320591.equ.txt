@@ -1,0 +1,110 @@
+#PVF_File
+
+[name]
+	`冰雪公主的霜语戒指`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使被命中敌人250px范围内的所有敌人进入冰冻状态， 效果持续2秒。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态。 `
+
+[detail explain]
+	`    攻击时， 有2%%的几率使被命中敌人250px范围内的所有敌人进入冰冻状态2秒， 效果持续2秒。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态3秒。  (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间5秒)`
+
+[flavor text]
+	`    为什么不愿和我一起走， 原来……王国的利益才是最重要的吗？  --摘自已故公主的日记`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	37
+
+[physical defense]
+	93
+
+[price]
+	127400
+
+[anti evil]
+	10
+
+[repair price]
+	101920
+
+[value]
+	101920
+
+[creation rate]
+	200
+
+[equipment magical defense]
+	4896	4464
+
+[icon]
+	`item/new_equipment/07_ring/ring.img`	144
+
+[field image]
+	`Item/FieldImage.img`	5
+
+[equipment type]
+	`[ring]`	21
+
+[move wav]
+	`RING_TOUCH`
+
+[weight]
+	300
+
+[item group name]
+	`ring`
+
+[cool time]
+	10000
+
+[water attack]
+	25
+
+[ice appendage]
+	40000	300	5000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	250
+	[probability]
+		2
+	[duration]
+		2000
+	[active status]
+		`freeze`	91
+[/then]
+
+[possible kiri protect]
+
+[set item master]
+	100310786

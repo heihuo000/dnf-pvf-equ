@@ -1,0 +1,267 @@
+#PVF_File
+
+[set name]
+	`黑暗之刃  套装`
+
+[piece set ability]
+	1	
+	[equipment physical defense]
+		600	600
+	[skill data up]
+		`[swordman]`	5	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[swordman]`	5	`[dungeon type]`	`[level]`	0	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	1	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	2	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	3	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	4	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	5	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	16	`%`	15
+		`[swordman]`	5	`[dungeon type]`	`[level]`	18	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[cooltime]`	0	`%`	-20
+		`[swordman]`	77	`[dungeon type]`	`[level]`	0	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	1	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	2	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	3	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	4	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	5	`%`	15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	7	`%`	15
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼斩]冷却时间 -20%%
+[鬼斩]攻击力 +15%%
+[月光斩]冷却时间 -15%%
+[月光斩]攻击力 +20%%`
+[/piece set ability]
+
+[piece set ability]
+	2	
+	[equipment physical defense]
+		800	800
+	[skill data up]
+		`[swordman]`	5	`[dungeon type]`	`[level]`	0	`%`	20
+		`[swordman]`	5	`[dungeon type]`	`[level]`	1	`%`	20
+		`[swordman]`	5	`[dungeon type]`	`[level]`	2	`%`	80
+		`[swordman]`	5	`[dungeon type]`	`[level]`	3	`%`	80
+		`[swordman]`	5	`[dungeon type]`	`[level]`	4	`%`	80
+		`[swordman]`	5	`[dungeon type]`	`[level]`	5	`%`	80
+		`[swordman]`	5	`[dungeon type]`	`[level]`	16	`%`	20
+		`[swordman]`	5	`[dungeon type]`	`[level]`	18	`%`	20
+		`[swordman]`	5	`[dungeon type]`	`[cooltime]`	0	`%`	-15
+		`[swordman]`	5	`[dungeon type]`	`[static]`	0	`%`	30
+		`[swordman]`	6	`[dungeon type]`	`[static]`	1	`%`	-50
+		`[swordman]`	6	`[dungeon type]`	`[static]`	5	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[cooltime]`	0	`%`	-15
+		`[swordman]`	77	`[dungeon type]`	`[level]`	0	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	1	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	2	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	3	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	4	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	5	`%`	30
+		`[swordman]`	77	`[dungeon type]`	`[level]`	7	`%`	30
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼斩]攻击力 +20%%
+[鬼斩]冷却时间 -15%%
+[鬼斩]大小 +30%%
+[鬼斩]最大蓄气攻击力增加率 +80%%
+[鬼斩]鬼神攻击力 +80%%
+[噬灵鬼斩]蓄气时间 -50%%
+[噬灵鬼斩]攻击力 +50%%
+[噬灵鬼斩]推进距离上限 +30%%
+[月光斩]攻击力 +30%%
+[月光斩]冷却时间 -15%%`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[use skill]
+			`swordman`	25
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[passive object]
+			99997	0	0	0	0	0	``
+			99021	0	0	0	0	-1	``
+			99121	0	0	0	0	-1	``
+		[/passive object]
+		[stat]
+			`physical attack`
+			`%`	20
+		[stat]
+			`magical attack`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	41
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99998	0	0	0	0	0	``
+			99022	0	0	0	0	-1	``
+			99122	0	0	0	0	-1	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	36
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99999	0	0	0	0	0	``
+			99023	0	0	0	0	-1	``
+			99123	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			147
+	[/then]
+	[if]
+		[my appendage]
+			147
+		[target active status]
+			`freeze`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	75
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999100	0	0	0	0	0	``
+			99024	0	0	0	0	-1	``
+			99124	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			142
+	[/then]
+	[if]
+		[my appendage]
+			142
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			6000
+		[passive object]
+			99026	0	0	0	0	-1	``
+		[/passive object]
+		[active status]
+			`any`	120
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	44
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999104	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	60
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999102	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	111
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999101	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	95
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			660058	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	241
+		[cooltime]
+			25000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			100
+		[summon monster]
+			64053	-1	1
+	[/then]
+	[equipment physical defense]
+		1000	1000
+	[skill data up]
+		`[swordman]`	5	`[dungeon type]`	`[level]`	0	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	1	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	2	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	3	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	4	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	5	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	16	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[level]`	18	`%`	30
+		`[swordman]`	5	`[dungeon type]`	`[static]`	0	`%`	20
+		`[swordman]`	111	`[dungeon type]`	`[cooltime]`	0	`%`	-25
+		`[swordman]`	111	`[dungeon type]`	`[level]`	0	`%`	40
+		`[swordman]`	111	`[dungeon type]`	`[level]`	1	`%`	40
+		`[swordman]`	82	`[dungeon type]`	`[level]`	2	`%`	50
+		`[swordman]`	82	`[dungeon type]`	`[level]`	3	`%`	50
+		`[swordman]`	82	`[dungeon type]`	`[level]`	4	`%`	50
+	[/skill data up]
+	[parameter basic explain]
+		`[鬼斩]攻击力 +30%%
+[鬼斩]大小 +20%%
+[鬼影鞭]攻击力 +40%%
+[鬼影鞭]冷却时间 -25%%
+[冥炎之卡洛]中的[冥炎剑]攻击力 +50%%
+[王者号令 : 吉格降临]神官吉格召唤数 +1`
+[/piece set ability]

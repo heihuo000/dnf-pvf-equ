@@ -1,0 +1,112 @@
+#PVF_File
+
+[name]
+	`雷电耀世腰带`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入感电状态10秒。`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入感电状态10秒， 每次攻击感电状态的敌人时， 附加1000点攻击力的伤害。`
+
+[grade]
+	95
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	28
+
+[magical attack]
+	19
+
+[inventory limit]
+	3000
+
+[price]
+	76000
+
+[repair price]
+	60800
+
+[value]
+	60800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	1236	1152
+
+[all elemental attack]
+	24
+
+[icon]
+	`item/new_equipment/04_larmor/belt/larmor_belt.img`	59
+
+[field image]
+	`Item/field_equip.img`	8
+
+[equipment type]
+	`[waist]`	18
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	25
+
+[weight]
+	1200
+
+[item group name]
+	`la waist`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		10000
+	[probability]
+		3
+	[active status]
+		`lightning`	95	1000
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,277 @@
+#PVF_File
+
+[name]
+	`骷髅骑士之魂`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使敌人进入失明状态， 效果持续3秒。
+    攻击失明状态的敌人时， 可以附加15%%的伤害。
+`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入失明状态， 失去90%%的视野， 且命中率降低20%%， 效果持续3秒。 (若敌人高于Lv74， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒； 在决斗场的中几率为1%%)
+    攻击失明状态的敌人时， 可以附加15%%的伤害。 (在决斗场中伤害为7%%)
+`
+
+[grade]
+	74
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	70
+
+[physical attack]
+	49
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[need material]
+	3338	180
+
+[repair price]
+	111888
+
+[value]
+	106560
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	640	593
+
+[equipment magical attack]
+	634	589
+
+[separate attack]
+	420	284
+
+[icon]
+	`item/new_equipment/01_weapon/swordman/beamswd/beamswd.img`	84
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[routing priority]
+	`swordman`	1
+	`demonic swordman`	0
+[/routing priority]
+
+[required skill]
+	33
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		5
+	[reduce probability to human armor at pvp module]
+		80
+	[active status]
+		`blind`	74	90	20
+[/then]
+
+[if]
+	[module]
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[dead tower]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[target active status]
+		`blind`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[if]
+	[module]
+		`[pvp]`
+	[/module]
+	[target active status]
+		`blind`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	7
+[/then]
+
+[item category]
+	`boss drop`
+[/item category]
+
+[possible kiri protect]
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	25	0
+
+[layer variation]
+	2151
+	`at_beamswda1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	2152
+	`at_beamswda2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	651
+	`at_beamswdb1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	652
+	`at_beamswdb2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_beamswdx`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`

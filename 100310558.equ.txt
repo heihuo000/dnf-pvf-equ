@@ -1,0 +1,103 @@
+#PVF_File
+
+[name]
+	`蘑菇怪人夏图的腕带`
+
+[basic explain]
+	`   攻击时， 有2%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`   攻击时， 有2%%的几率使敌人进入出血状态3秒；  出血状态下的敌人， 每0.5秒受到120点的伤害。(若敌人高于Lv29， 则减少进入异常状态的几率； 反之则增加几率)`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	25
+
+[physical attack]
+	14
+
+[physical defense]
+	34
+
+[need material]
+	10149508	30
+
+[price]
+	29000
+
+[value]
+	23200
+
+[creation rate]
+	0
+
+[equipment magical defense]
+	1728	1488
+
+[physical critical hit]
+	2
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	133
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	20
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[duration]
+		2000
+	[active status]
+		`bleeding`	29	480
+[/then]
+
+[possible kiri protect]

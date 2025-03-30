@@ -1,0 +1,182 @@
+#PVF_File
+
+[name]
+	`蜘蛛王室的血影残足`
+
+[basic explain]
+	`    攻击时， 有12%%的几率使敌人进入出血状态。`
+
+[detail explain]
+	`    攻击时， 有12%%的几率使敌人进入出血状态7秒； 出血状态下的敌人， 每0.5秒会受到120点伤害。 (若敌人高于Lv34， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[magical attack]
+	38
+
+[attack speed]
+	50
+
+[stuck]
+	-2.0
+
+[stuck resistance]
+	30
+
+[need material]
+	10149508	45
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	323	285
+
+[equipment magical attack]
+	340	300
+
+[equipment physical defense]
+	340	340
+
+[separate attack]
+	195	129
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/tonfa/tonfa.img`	124
+
+[field image]
+	`Item/FieldImage.img`	18
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	39	0
+
+[layer variation]
+	2790
+	`tonfac`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`tonfab`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	38	0
+
+[layer variation]
+	2150
+	`at_tonfaa`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	650
+	`at_tonfab`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_tonfac`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_tonfax`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BGLOVE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`tonfa`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		12
+	[reduce probability at pvp module]
+		90
+	[duration]
+		7000
+	[active status]
+		`bleeding`	34	1680
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,219 @@
+#PVF_File
+
+[set name]
+	`夜叉王的降神  套装`
+
+[piece set ability]
+	1	
+	[skill data up]
+		`[swordman]`	77	`[dungeon type]`	`[level]`	2	`%`	35
+		`[swordman]`	36	`[dungeon type]`	`[level]`	2	`+`	150
+	[/skill data up]
+	[parameter basic explain]
+		`[满月斩]双手上斩攻击力 +35%%
+[冰霜之萨亚]冰冻几率 +15%%`
+[/piece set ability]
+
+[piece set ability]
+	2	
+	[skill data up]
+		`[swordman]`	36	`[dungeon type]`	`[static]`	3	`%`	-50
+		`[swordman]`	36	`[dungeon type]`	`[level]`	1	`%`	-40
+		`[swordman]`	36	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+		`[swordman]`	41	`[dungeon type]`	`[level]`	2	`%`	25
+		`[swordman]`	41	`[dungeon type]`	`[level]`	3	`%`	25
+		`[swordman]`	41	`[dungeon type]`	`[cooltime]`	0	`%`	-25
+	[/skill data up]
+	[parameter basic explain]
+		`[冰霜之萨亚]冷却时间 -30%%
+[冰霜之萨亚]攻击间隔 -50%%
+[冰霜之萨亚]持续时间 -40%%
+[侵蚀之普戾蒙]魔防减少量 +25%%
+[侵蚀之普戾蒙]冷却时间 -25%%`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[if]
+		[use skill]
+			`swordman`	25
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			20000
+		[passive object]
+			99997	0	0	0	0	0	``
+			99021	0	0	0	0	-1	``
+			99121	0	0	0	0	-1	``
+		[/passive object]
+		[stat]
+			`physical attack`
+			`%`	20
+		[stat]
+			`magical attack`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	41
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99998	0	0	0	0	0	``
+			99022	0	0	0	0	-1	``
+			99122	0	0	0	0	-1	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	36
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			99999	0	0	0	0	0	``
+			99023	0	0	0	0	-1	``
+			99123	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			147
+	[/then]
+	[if]
+		[my appendage]
+			147
+		[target active status]
+			`freeze`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	20
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	75
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999100	0	0	0	0	0	``
+			99024	0	0	0	0	-1	``
+			99124	0	0	0	0	-1	``
+		[/passive object]
+		[appendage]
+			142
+	[/then]
+	[if]
+		[my appendage]
+			142
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			6000
+		[passive object]
+			99026	0	0	0	0	-1	``
+		[/passive object]
+		[active status]
+			`any`	120
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	44
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999104	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	60
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999102	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	111
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			999101	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[use skill]
+			`swordman`	95
+		[/use skill]
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[passive object]
+			660058	0	0	0	0	0	``
+		[/passive object]
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	241
+		[cooltime]
+			25000
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[duration]
+			30000
+		[probability]
+			100
+		[summon monster]
+			64053	-1	1
+	[/then]
+	[skill data up]
+		`[swordman]`	96	`[dungeon type]`	`[static]`	3	`%`	-50
+		`[swordman]`	96	`[dungeon type]`	`[level]`	1	`%`	-35
+		`[swordman]`	96	`[dungeon type]`	`[level]`	5	`+`	5
+		`[swordman]`	96	`[dungeon type]`	`[level]`	7	`%`	-50
+		`[swordman]`	96	`[dungeon type]`	`[level]`	8	`%`	30
+		`[swordman]`	96	`[dungeon type]`	`[skill consume item]`	0	`+`	2
+		`[swordman]`	96	`[dungeon type]`	`[cooltime]`	0	`%`	-30
+	[/skill data up]
+	[parameter basic explain]
+		`[冰晶之萨亚]攻击间隔 -50%%
+[冰晶之萨亚]冰之结晶生成数量 +5
+[冰晶之萨亚]冰之结晶再生成时间 -50%%
+[冰晶之萨亚]适用范围 +30%%
+[冰晶之萨亚]冷却时间-30%%
+[冰晶之萨亚]持续时间 -35%%
+[冰晶之萨亚]无色小晶块消耗量 +2
+[王者号令 : 吉格降临]神官吉格召唤数 +1`
+[/piece set ability]

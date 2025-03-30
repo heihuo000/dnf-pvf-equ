@@ -1,0 +1,185 @@
+#PVF_File
+
+[name]
+	`黑暗巨蝎的剧毒手弩`
+
+[basic explain]
+	`    普通攻击、 跳跃攻击时， 有20%%的几率使敌人进入中毒状态。`
+
+[detail explain]
+	`    普通攻击、 跳跃攻击时， 有20%%的几率使敌人进入中毒状态， 且每0.5秒造成66点伤害， 效果持续2秒。 (若敌人高于Lv24， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[usable job]
+	`[gunner]`
+	`[at gunner]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[minimum level]
+	20
+
+[physical attack]
+	19
+
+[magical attack]
+	10
+
+[attack speed]
+	20
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	15
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	204	162
+
+[equipment magical attack]
+	227	180
+
+[separate attack]
+	147	95
+
+[physical critical hit]
+	3
+
+[icon]
+	`item/new_equipment/01_weapon/gunner/bowgun/bowgun.img`	119
+
+[field image]
+	`Item/field_weapon.img`	5
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[gunner]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`bowgunc`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[layer variation]
+	650
+	`bowgunb`
+
+[equipment ani script]
+	`equipment/character/gunner.lay`
+
+[animation job]
+	`[at gunner]`
+
+[variation]
+	1	2
+
+[layer variation]
+	2790
+	`at_bowgunc`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[layer variation]
+	650
+	`at_bowgunb`
+
+[equipment ani script]
+	`equipment/character/atgunner.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`RIFLE_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2300
+
+[item group name]
+	`bowgun`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[if]
+	[my state]
+		`attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[reduce probability at pvp module]
+		90
+	[duration]
+		2000
+	[active status]
+		`poison`	24	264
+[/then]
+
+[if]
+	[my state]
+		`jump attack`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		20
+	[reduce probability at pvp module]
+		90
+	[duration]
+		2000
+	[active status]
+		`poison`	24	264
+[/then]
+
+[possible kiri protect]

@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`巨龙金鳞护腿`
+
+[basic explain]
+	`攻击时， 有10%%的几率使敌人进入灼伤状态10秒。
+ 
+对灼伤状态下敌人的伤害 +18%%`
+
+[detail explain]
+	`攻击时， 有10%%的几率使敌人进入灼伤状态10秒， 灼伤状态下的敌人每0.5秒受到1500点攻击力的伤害。 (若敌人高于Lv95， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+ 
+对灼伤状态下敌人的伤害 +18%% (伤害加成效果取最高值， 且无法叠加； 暴击/附加伤害除外)`
+
+[grade]
+	95
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	43
+
+[magical attack]
+	31
+
+[physical defense]
+	39
+
+[price]
+	114000
+
+[repair price]
+	91200
+
+[value]
+	91200
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	4120	3840
+
+[icon]
+	`item/new_equipment/05_harmor/pants/harmor_pants.img`	62
+
+[field image]
+	`Item/field_equip.img`	11
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	34
+
+[weight]
+	2900
+
+[item group name]
+	`ha pants`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		500
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		10
+	[duration]
+		10000
+	[active status]
+		`burn`	95	30000	0	0	0
+[/then]
+
+[if]
+	[target active status]
+		`burn`
+	[event attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[increase damage]
+		`%`	18
+[/then]
+
+[possible kiri protect]

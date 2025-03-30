@@ -1,0 +1,186 @@
+#PVF_File
+
+[name]
+	`禁忌深渊肩甲`
+
+[basic explain]
+	`    攻击时， 有30%%的几率使敌人进入随机的异常状态， 效果持续20秒。
+ 
+    攻击异常状态的敌人时， 增加12%%的所有攻击力， 效果持续15秒。`
+
+[detail explain]
+	`    攻击时， 有30%%的几率使敌人进入随机的异常状态， 效果持续20秒。
+- 中毒、 灼伤和出血状态下的敌人， 每0.5秒受到50点攻击力的伤害， 效果持续20秒。
+- 诅咒状态下的敌人， 减少5点力量、 体力、 智力和精神， 效果持续20秒。
+- 感电状态下的敌人， 每次攻击时附加50点攻击力的伤害， 效果持续20秒。
+(若敌人高于Lv96， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+ 
+    攻击异常状态的敌人时， 增加12%%的所有攻击力， 效果持续15秒。 (冷却时间15秒)`
+
+[grade]
+	90
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	90
+
+[physical attack]
+	111
+
+[magical attack]
+	101
+
+[physical defense]
+	32
+
+[price]
+	115200
+
+[repair price]
+	92160
+
+[value]
+	92160
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	3392	3104
+
+[icon]
+	`item/new_equipment/05_harmor/neck/harmor_neck.img`	61
+
+[field image]
+	`Item/field_equip.img`	12
+
+[equipment type]
+	`[shoulder]`	20
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	32
+
+[weight]
+	2300
+
+[item group name]
+	`ha shoulder`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[multiple then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[duration]
+			20000
+		[active status]
+			`poison`	90	2000
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[duration]
+			20000
+		[active status]
+			`burn`	96	2000	0	0	0
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[duration]
+			20000
+		[active status]
+			`bleeding`	90	2000
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[duration]
+			20000
+		[active status]
+			`curse`	96	5	5	5	5
+		[then probability]
+			20.0
+	[/then]
+	[then]
+		[target]
+			`enemy`	-1
+		[probability]
+			30
+		[duration]
+			20000
+		[active status]
+			`lightning`	96	50
+		[then probability]
+			20.0
+	[/then]
+[/multiple then]
+
+[if]
+	[target active status]
+		`any`
+	[attack success]
+		1
+	[cooltime]
+		15000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[equipment duration]
+		15000
+	[stat by condition]
+		`physical attack bonus`
+		`%`	12
+	[stat by condition]
+		`magical attack bonus`
+		`%`	12
+	[stat by condition]
+		`separate attack`
+		`%`	12
+[/then]
+
+[possible kiri protect]
+
+[anti evil]
+	30

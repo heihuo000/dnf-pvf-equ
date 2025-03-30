@@ -1,0 +1,130 @@
+#PVF_File
+
+[name]
+	`冰雪公主的霜语手镯`
+
+[basic explain]
+	`    攻击时， 赋予武器冰属性， 效果持续20秒。
+    被攻击时， 使500px范围内的所有敌人进入冰冻状态。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态。 `
+
+[detail explain]
+	`    攻击时， 赋予武器冰属性， 效果持续20秒。 (冷却时间20秒； 解除装备后效果消失)
+    被攻击时， 使500px范围内的所有敌人进入冰冻状态3秒。
+    装备时， 会对周围300px范围内的所有敌人产生冰冻光环。  
+    冰冻光环持续5秒后， 对敌人附加40000点冰属性伤害， 有150%%的几率使敌人进入冰冻状态3秒。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    那就别怪我做出这样的决定！  --摘自已故公主的日记`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	37
+
+[physical defense]
+	93
+
+[price]
+	127400
+
+[anti evil]
+	10
+
+[repair price]
+	101920
+
+[value]
+	101920
+
+[creation rate]
+	200
+
+[equipment magical defense]
+	4896	4464
+
+[icon]
+	`item/new_equipment/09_bracelet/bracelet.img`	97
+
+[field image]
+	`Item/FieldImage.img`	7
+
+[equipment type]
+	`[wrist]`	21
+
+[move wav]
+	`BRACELET_TOUCH`
+
+[weight]
+	400
+
+[item group name]
+	`wrist`
+
+[cool time]
+	10000
+
+[water attack]
+	18
+
+[ice appendage]
+	40000	300	5000
+
+[if]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		100
+	[duration]
+		20000
+	[elemental weapon]
+		`water`
+[/then]
+
+[if]
+	[cooltime]
+		20000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		3000
+	[probability]
+		100
+	[active status]
+		`freeze`	91
+[/then]
+
+[set item master]
+	100310786
+
+[possible kiri protect]

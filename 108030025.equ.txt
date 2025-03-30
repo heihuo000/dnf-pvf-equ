@@ -1,0 +1,215 @@
+#PVF_File
+
+[name]
+	`夏皮罗的正义[活动]`
+
+[basic explain]
+	`破招伤害 +25%%
+    破招时， 有3%%的几率使敌人进入眩晕状态。
+    无法进行合成和分解。`
+
+[detail explain]
+	`猛拳攻击时， 以3%%机率 3秒之内使敌人陷入气绝状态。 （高于Lv61的对象得到的机率和效果减少， 低于Lv61的对象则会增加。）
+反击时敌人给予 25%%的附加伤害。（决斗场内18%% 附加伤害）`
+
+[grade]
+	61
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	41
+
+[attack speed]
+	-80
+
+[stuck]
+	-2
+
+[price]
+	109800
+
+[repair price]
+	92232
+
+[value]
+	87840
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	667	619
+
+[equipment magical attack]
+	473	439
+
+[separate attack]
+	341	230
+
+[icon]
+	`Item/weapon/priest/axe.img`	36
+
+[field image]
+	`Item/field_weapon.img`	15
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[priest]`
+
+[variation]
+	5	0
+
+[layer variation]
+	200
+	`axed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`axec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`AXE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	4000
+
+[item group name]
+	`axe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		1500
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		3
+	[active status]
+		`stun`	61
+[/then]
+
+[if]
+	[attack condition]
+		`counter`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	25
+[/then]
+
+[pvp]
+	[if]
+		[cooltime]
+			1500
+		[attack condition]
+			`counter`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[probability]
+			3
+		[active status]
+			`stun`	61
+	[/then]
+	[if]
+		[attack condition]
+			`counter`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[add absolute damage]
+			`all`
+			`%`	18
+	[/then]
+[/pvp]
+
+[not amplify]
+	1
+
+[impossible contents]
+	`disjoint`
+[/impossible contents]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	5	0
+
+[layer variation]
+	2790
+	`at_axec`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_axex`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_axed`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

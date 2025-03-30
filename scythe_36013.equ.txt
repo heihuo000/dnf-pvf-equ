@@ -1,0 +1,180 @@
+#PVF_File
+
+[name]
+	`奈茶特[网咖]`
+
+[basic explain]
+	`攻击时以3%% 的机率让敌人陷入诅咒状态
+攻击速度 +2%%
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以3%%的机率在20秒内让敌人陷入诅咒状态， 力量减少30， 体力减少30， 智能减少30， 精神力减少30。 （高于Lv30的对象得到的机率减少， 低于Lv30的对象则会增加。）
+攻击速度 +2%%
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	34
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	30
+
+[physical attack]
+	25
+
+[magical attack]
+	25
+
+[attack speed]
+	100
+
+[cast speed]
+	20
+
+[stuck]
+	1
+
+[price]
+	54400
+
+[repair price]
+	43520
+
+[value]
+	43520
+
+[equipment physical attack]
+	323	285
+
+[equipment magical attack]
+	340	300
+
+[separate attack]
+	196	130
+
+[physical critical hit]
+	2
+
+[magical critical hit]
+	2
+
+[skill levelup]
+	`[priest]`	114	2
+[/skill levelup]
+
+[icon]
+	`Item/weapon/priest/scythe.img`	23
+
+[field image]
+	`Item/field_weapon.img`	14
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	2	5
+
+[layer variation]
+	200
+	`scythed`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`scythec`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	3
+
+[move wav]
+	`SCYTHE_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2800
+
+[item group name]
+	`scythe`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		3
+	[active status]
+		`curse`	30	30	30	30	30
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	2	5
+
+[layer variation]
+	2790
+	`at_scythec`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_scythex`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_scythed`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

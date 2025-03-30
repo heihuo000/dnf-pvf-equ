@@ -1,0 +1,91 @@
+#PVF_File
+
+[name]
+	`似血红花`
+
+[explain]
+	`攻击时， 有5%%的几率使自身进入出血状态。
+出血状态下， 10秒内恢复10%%的HP。`
+
+[grade]
+	1
+
+[rarity]
+	2
+
+[icon mark]
+	`Item/IconMark.img`	64
+
+[no random]
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[trade]`
+
+[minimum level]
+	1
+
+[icon]
+	`Item/Title/title.img`	735
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[custom animation]
+	`TitleAnimation/evildom_3.ani`
+[/custom animation]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		5
+	[duration]
+		10000
+	[active status]
+		`bleeding`	90	200
+[/then]
+
+[if]
+	[my active status]
+		`bleeding`
+	[time]
+		500	1	0
+	[stat change]
+		`hp`
+		`>`
+		`%`	0
+	[/stat change]
+	[cooltime]
+		10000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	10	10000
+[/then]
+
+[npc gift disallowance]
+	1
+
+[impossible contents]
+	`disjoint`
+	`gift`
+[/impossible contents]

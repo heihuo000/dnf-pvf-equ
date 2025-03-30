@@ -1,0 +1,251 @@
+#PVF_File
+
+[set name]
+	`瘟疫之源  套装`
+
+[piece set ability]
+	2	
+	[if]
+		[change status]
+			`hp`
+			`>`
+			`%`	0
+			`end`
+		[cooltime]
+			10000
+	[/if]
+	[then]
+		[target]
+			`all enemy`	500
+		[duration]
+			10000
+		[appendage]
+			587
+	[/then]
+	[parameter basic explain]
+		`    生成光环， 使500px范围的所有敌人减少50点异常状态抗性。`
+[/piece set ability]
+
+[piece set ability]
+	3	
+	[all elemental attack]
+		12
+	[if]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			10000
+		[appendage]
+			572
+	[/then]
+	[parameter basic explain]
+		`    攻击敌人时， 使敌人减少10%%的防御力， 效果持续10秒。 (最多重叠1次)`
+[/piece set ability]
+
+[piece set ability]
+	5	
+	[if]
+		[target active status]
+			`bleeding`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`blind`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`burn`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`confuse`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`curse`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`freeze`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`hold`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`lightning`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`poison`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`slow`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`stone`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[target active status]
+			`stun`
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[equipment duration]
+			30000
+		[appendage]
+			10019
+	[/then]
+	[if]
+		[time]
+			2000	1	2000
+		[stat change]
+			`hp`
+			`>`
+			`%`	0
+	[/if]
+	[then]
+		[target]
+			`all enemy`	300
+		[duration]
+			10000
+		[active status]
+			`burn`	90	100	0	1	5000
+		[active status]
+			`lightning`	90	100
+		[active status]
+			`curse`	90	10	10	10	10
+	[/then]
+	[skill data up]
+		`[all]`	254	`[dungeon type]`	`[level]`	26	`+`	-30
+	[/skill data up]
+	[parameter basic explain]
+		`    所有技能冷却时间 -30%%
+    攻击异常状态的敌人时， 使自身进入瘟疫之源状态， 效果持续30秒。 (效果不会叠加)
+ - 瘟疫之源状态下， 攻击敌人时， 附加15%%的伤害。
+    每2秒使300px范围内的所有敌人进入诅咒、 灼伤、 感电状态10秒。
+ - 使敌人进入灼伤状态10秒； 灼伤状态下的敌人， 每0.5秒受到100点伤害。
+ - 使敌人进入感电状态10秒； 每次攻击时附加100点攻击力的伤害。
+ - 使敌人进入诅咒状态10秒； 诅咒状态下的敌人力量、 智力、 体力和精神各减少10点。
+(若敌人高于Lv90， 则减少进入该装备诅咒状态的几率； 反之， 则增加几率)`
+[/piece set ability]

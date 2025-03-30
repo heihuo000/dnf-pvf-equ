@@ -1,0 +1,190 @@
+#PVF_File
+
+[name]
+	`煞血天劫腿甲`
+
+[basic explain]
+	`    每5秒减少1%%的HP。
+    攻击时， 有1%%的几率使画面内的所有敌人减少5%%的HP。 (冷却时间3秒)
+    攻击时， 有5%%的几率使画面内的敌人进入出血状态。 (冷却时间5秒)
+    被攻击时， 使自身恢复25%%的HP。 (冷却时间60秒)
+    自身在出血状态下， 使自身增加20%%的攻击速度、 30%%的施放速度和10%%的移动速度。`
+
+[detail explain]
+	`    每5秒减少1%%的HP。 (装备1秒后生效)
+    攻击时， 有1%%的几率使画面内的所有敌人减少5%%的HP。 (冷却时间3秒； 对精英怪物的效果为1/3、 对领主和深渊怪物的效果为1/6)
+    攻击时， 有5%%的几率使画面内的所有敌人进入出血状态4秒； 出血状态下的敌人， 每0.5秒受到75点伤害。(冷却时间5秒)
+    被攻击时， 使自身恢复25%%的HP。 (冷却时间60秒)
+    自身在出血状态下， 增加20%%的攻击速度、 30%%的施放速度和10%%的移动速度。`
+
+[flavor text]
+	`    为了复仇， 我愿献出我的血与肉， 只求赐予我力量， 消灭眼前这可恶的混蛋。  --某位鬼剑士`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	38
+
+[magical attack]
+	38
+
+[physical defense]
+	41
+
+[price]
+	126000
+
+[repair price]
+	100800
+
+[value]
+	100800
+
+[creation rate]
+	0
+
+[equipment physical defense]
+	4900	4550
+
+[icon]
+	`item/new_equipment/06_plate/pants/plate_pants.img`	20
+
+[field image]
+	`Item/field_equip.img`	16
+
+[equipment type]
+	`[pants]`	21
+
+[sub type]
+	4
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	50
+
+[weight]
+	4100
+
+[item group name]
+	`mt pants`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		5000	1	1000
+	[cooltime]
+		5000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	-1	0
+[/then]
+
+[if]
+	[cooltime]
+		10000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		1
+	[weakness]
+		5
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[probability]
+		5
+	[duration]
+		4000
+	[active status]
+		`bleeding`	90	600
+[/then]
+
+[if]
+	[cooltime]
+		60000
+	[hit]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[restore]
+		`hp`
+		`%`	25	0
+[/then]
+
+[if]
+	[my active status]
+		`bleeding`
+	[change status]
+		`hp`
+		`>`
+		`%`	0
+		`end`
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[stat by condition]
+		`attack speed`
+		`+`	200
+	[stat by condition]
+		`cast speed`
+		`+`	300
+	[stat by condition]
+		`move speed`
+		`+`	100
+[/then]
+
+[possible kiri protect]

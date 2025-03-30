@@ -1,0 +1,165 @@
+#PVF_File
+
+[name]
+	`毒龙之牙`
+
+[basic explain]
+	`    攻击时， 有25%%的几率使敌人进入中毒状态。
+    攻击中毒状态的敌人时， 附加20%%的伤害。`
+
+[detail explain]
+	`    攻击时， 有25%%的几率使敌人进入中毒状态3秒； 中毒状态下的敌人， 每0.5秒会受到688点伤害。
+    攻击中毒状态的敌人时， 附加20%%的伤害。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	62
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[price]
+	144000
+
+[repair price]
+	115200
+
+[value]
+	115200
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	855	712
+
+[equipment magical attack]
+	819	733
+
+[separate attack]
+	552	363
+
+[physical critical hit]
+	10
+
+[physical critical hit]
+	8
+
+[icon]
+	`item/new_equipment/01_weapon/thief/dagger/dagger.img`	113
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	26	1
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[probability]
+		25
+	[reduce probability at pvp module]
+		90
+	[active status]
+		`poison`	89	1176
+[/then]
+
+[if]
+	[target active status]
+		`poison`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	20
+[/then]
+
+[possible kiri protect]

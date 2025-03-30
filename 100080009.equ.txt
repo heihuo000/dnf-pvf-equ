@@ -1,0 +1,131 @@
+#PVF_File
+
+[name]
+	`星云迷踪上衣`
+
+[basic explain]
+	`    攻击时， 有5%%的几率使自身进入失明状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使自身进入失明状态15秒。 (若敌人高于Lv86， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	80
+
+[physical attack]
+	39
+
+[physical defense]
+	35
+
+[magical attack]
+	28
+
+[price]
+	119000
+
+[repair price]
+	99960
+
+[value]
+	95200
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	4464	4176
+
+[physical critical hit]
+	4
+
+[magical critical hit]
+	4
+
+[icon]
+	`item/new_equipment/05_harmor/coat/harmor_coat.img`	10
+
+[field image]
+	`Item/field_equip.img`	10
+
+[equipment type]
+	`[coat]`	22
+
+[sub type]
+	3
+
+[move wav]
+	`SCRAP_TOUCH`
+
+[durability]
+	40
+
+[weight]
+	3600
+
+[item group name]
+	`ha coat`
+
+[cool time]
+	10000
+
+[part set index]
+	11337
+
+[if]
+	[cooltime]
+		3000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		15000
+	[probability]
+		5
+	[active status]
+		`blind`	86	50	5
+[/then]
+
+[all skill item container]
+	[all skill item]
+		[item growtype]
+			`[all]`	0
+		[skill apply condition]
+			[skill group]
+				`[all]`
+			[lower bound level]
+				40
+			[upper bound level]
+				60
+			[value]
+				2
+			[extra condition]
+				`[except for ex skill]`
+			[/extra condition]
+		[/skill apply condition]
+		[skill phase]
+			`[all]`
+	[/all skill item]
+[/all skill item container]
+
+[possible kiri protect]

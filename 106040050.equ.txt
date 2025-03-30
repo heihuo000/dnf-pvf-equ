@@ -1,0 +1,245 @@
+#PVF_File
+
+[name]
+	`牛头械王的能量扫把`
+
+[basic explain]
+	`    装备后， 每10秒可使画面内的所有敌人进入眩晕状态3秒。
+    攻击时， 有5%%的几率使500px范围内的所有敌人进入眩晕状态2秒。
+    攻击眩晕状态下的敌人时， 附加15%%的伤害。`
+
+[detail explain]
+	`    装备后， 每10秒可使画面内的所有敌人进入眩晕状态3秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备10秒后生效)
+    攻击时， 有5%%的几率使500px范围内的所有敌人进入眩晕状态2秒。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间4秒)
+    攻击眩晕状态下的敌人时， 附加15%%的伤害。`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[mage]`
+	`[at mage]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[magical attack]
+	62
+
+[attack speed]
+	60
+
+[move speed]
+	30
+
+[price]
+	162000
+
+[repair price]
+	129600
+
+[value]
+	129600
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	911	814
+
+[equipment magical attack]
+	1002	895
+
+[separate attack]
+	552	363
+
+[icon]
+	`item/new_equipment/01_weapon/mage/broom/broom.img`	84
+
+[field image]
+	`Item/field_weapon.img`	10
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[mage]`
+
+[variation]
+	15	9
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[animation job]
+	`[at mage]`
+
+[variation]
+	15	9
+
+[layer variation]
+	2150
+	`at_brooma`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[layer variation]
+	200
+	`at_broomd`
+
+[equipment ani script]
+	`equipment/character/atmage.lay`
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	15	9
+
+[layer variation]
+	2790
+	`broomc`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[layer variation]
+	200
+	`broomd`
+
+[equipment ani script]
+	`equipment/character/mage.lay`
+
+[sub type]
+	4
+
+[move wav]
+	`BROOM_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2500
+
+[item group name]
+	`broom`
+
+[cool time]
+	10000
+
+[if]
+	[target active status]
+		`stun`
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[add absolute damage]
+		`all`
+		`%`	15
+[/then]
+
+[skill data up]
+	`[creator mage]`	250	`[all]`	`[level]`	0	`%`	25
+	`[creator mage]`	251	`[all]`	`[level]`	0	`%`	25
+	`[creator mage]`	252	`[all]`	`[level]`	0	`%`	25
+	`[creator mage]`	253	`[all]`	`[level]`	0	`%`	25
+	`[creator mage]`	255	`[all]`	`[level]`	0	`%`	25
+[/skill data up]
+
+[if]
+	[cooltime]
+		10000
+	[time]
+		10000	1	10000
+[/if]
+
+[then]
+	[target]
+		`all enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`stun`	90
+[/then]
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		2000
+	[probability]
+		5
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`stun`	90
+[/then]
+
+[if]
+	[cooltime]
+		4000
+	[use skill]
+		`creator mage`	252
+	[/use skill]
+[/if]
+
+[then]
+	[target]
+		`all enemy`	400
+	[duration]
+		2000
+	[probability]
+		20
+	[reduce probability at pvp module]
+		90
+	[active status]
+		`stun`	90
+[/then]
+
+[required skill]
+	207
+
+[possible kiri protect]

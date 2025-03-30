@@ -1,0 +1,196 @@
+#PVF_File
+
+[name]
+	`米斯特汀`
+
+[basic explain]
+	`    攻击时， 附加22%%的伤害。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。`
+
+[detail explain]
+	`    攻击时， 附加22%%的伤害。
+    攻击时， 有2%%的几率使敌人进入眩晕状态。 (若敌人高于Lv91， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    无论多强大的武器， 当需要时不在身边， 都会成无用之物。`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	97
+
+[attack speed]
+	-30
+
+[stuck]
+	-1
+
+[need material]
+	3285	5000
+
+[price]
+	163800
+
+[repair price]
+	131040
+
+[value]
+	131040
+
+[creation rate]
+	200
+
+[equipment physical attack]
+	1056	906
+
+[equipment magical attack]
+	912	783
+
+[separate attack]
+	589	382
+
+[dark attack]
+	45
+
+[icon]
+	`Item/new_equipment/01_weapon/swordman/club/club.img`	103
+
+[field image]
+	`Item/FieldImage.img`	8
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`clubc`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	650
+	`clubb`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	2
+
+[move wav]
+	`STICK_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3400
+
+[item group name]
+	`club`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[if]
+	[cooltime]
+		4000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[reduce duration to human armor at pvp module]
+		50
+	[duration]
+		2000
+	[reduce probability at pvp module]
+		80
+	[probability]
+		2
+	[active status]
+		`stun`	91
+[/then]
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	22
+[/skill data up]
+
+[possible kiri protect]
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	31	0
+
+[layer variation]
+	2150
+	`at_cluba`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	650
+	`at_clubb`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_clubx`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`

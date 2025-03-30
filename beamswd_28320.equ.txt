@@ -1,0 +1,353 @@
+#PVF_File
+
+[name]
+	`霜寒之魄`
+
+[name2]
+	`Hello Guwish`
+
+[basic explain]
+	`[破军升龙击]、 [暗影升龙击]、 [樱落斩]命中敌人时， 可以使敌人进入感电状态。
+施放[拔刀斩]、 [乱花葬]、 [破魂斩]时， 有25%%的几率不受冷却时间影响。`
+
+[detail explain]
+	`    [破军升龙击]、 [暗影升龙击]、 [樱落斩]命中敌人时， 可以使敌人进入感电状态3秒； 若攻击感电状态的敌人， 则每次攻击可以附加200点伤害。
+施放[拔刀斩]、 [乱花葬]、 [破魂斩]时， 有25%%的几率不受冷却时间影响。 (在决斗场中几率为2%%)`
+
+[grade]
+	62
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[swordman]`
+	`[creator mage]`
+[/usable job]
+
+[need material]
+	2749095	15
+
+[creation rate]
+	125
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	55
+
+[physical attack]
+	42
+
+[attack speed]
+	100
+
+[stuck]
+	1
+
+[repair price]
+	93744
+
+[value]
+	89280
+
+[equipment physical attack]
+	532	487
+
+[equipment magical attack]
+	515	472
+
+[separate attack]
+	360	243
+
+[icon]
+	`Item/weapon/swordman/beamswd.img`	70
+
+[field image]
+	`Item/FieldImage.img`	35
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[swordman]`
+
+[variation]
+	3	5
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	3	5
+
+[layer variation]
+	2791
+	`beamswdc1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	2792
+	`beamswdc2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	651
+	`beamswdb1`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[layer variation]
+	652
+	`beamswdb2`
+
+[equipment ani script]
+	`equipment/character/swordman.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`BEAMSWD_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	2500
+
+[item group name]
+	`beamswd`
+
+[cool time]
+	10000
+
+[required skill]
+	33
+
+[if]
+	[skill]
+		`swordman`	68
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`lightning`	60	80
+[/then]
+
+[if]
+	[skill]
+		`demonic swordman`	68
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`lightning`	60	80
+[/then]
+
+[if]
+	[skill]
+		`creator mage`	217
+	[/skill]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		3000
+	[active status]
+		`lightning`	60	80
+[/then]
+
+[if]
+	[event use skill]
+		`swordman`	9
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[swordman]`	9	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`demonic swordman`	9
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[demonic swordman]`	9	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[if]
+	[event use skill]
+		`creator mage`	217
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		25
+	[skill data up]
+		`[creator mage]`	217	`[all]`	`[cooltime]`	0	`%`	-100
+	[/skill data up]
+[/then]
+
+[pvp]
+	[if]
+		[skill]
+			`swordman`	68
+		[/skill]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`lightning`	60	40
+	[/then]
+	[if]
+		[skill]
+			`demonic swordman`	68
+		[/skill]
+		[attack success]
+			1
+	[/if]
+	[then]
+		[target]
+			`enemy`	-1
+		[duration]
+			3000
+		[active status]
+			`lightning`	60	40
+	[/then]
+	[if]
+		[event use skill]
+			`swordman`	9
+	[/if]
+	[then]
+		[target]
+			`myself`	-1
+		[probability]
+			2
+		[skill data up]
+			`[swordman]`	9	`[all]`	`[cooltime]`	0	`%`	-100
+		[/skill data up]
+	[/then]
+[/pvp]
+
+[routing priority]
+	`swordman`	1
+	`demonic swordman`	0
+[/routing priority]
+
+[possible kiri protect]
+
+[animation job]
+	`[creator mage]`
+
+[variation]
+	3	5
+
+[layer variation]
+	2151
+	`at_beamswda1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	2152
+	`at_beamswda2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	651
+	`at_beamswdb1`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	652
+	`at_beamswdb2`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`
+
+[layer variation]
+	1350
+	`at_beamswdx`
+
+[equipment ani script]
+	`equipment/character/atswordman.lay`

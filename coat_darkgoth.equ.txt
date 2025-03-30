@@ -1,0 +1,146 @@
+#PVF_File
+
+[name]
+	`黑暗的哥特长袍`
+
+[name2]
+	`Dark Goth Coat`
+
+[creation rate]
+	125
+
+[grade]
+	65
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	60
+
+[magical attack]
+	33
+
+[magical defense]
+	33
+
+[price]
+	58500
+
+[repair price]
+	51597
+
+[value]
+	46800
+
+[equipment physical defense]
+	876	804
+
+[icon]
+	`Item/common/coat.img`	100
+
+[field image]
+	`Item/field_equip.img`	0
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	0
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	28
+
+[weight]
+	1400
+
+[item group name]
+	`cl coat`
+
+[cool time]
+	10000
+
+[set name]
+	`黑暗的哥特战袍  套装`
+
+[set item]
+	10167	12164	14148	16140	18148
+[/set item]
+
+[set ability]
+	[fullset basic explain]
+		`    攻击时， 有20%%的几率使自身和队员的武器属性变成暗属性， 效果持续30秒。
+    施放时， 有20%%的几率使250px范围内的所有敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少50点力量、 体力、 智力和精神。 (若敌人高于Lv65， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+	[dark attack]
+		30
+	[if]
+		[cooltime]
+			10000
+		[casting]
+			1
+	[/if]
+	[then]
+		[target]
+			`all enemy`	250
+		[duration]
+			5000
+		[probability]
+			20
+		[reduce probability to human armor at pvp module]
+			100
+		[active status]
+			`curse`	65	50	50	50	50
+	[/then]
+	[if]
+		[attack success]
+			1
+		[cooltime]
+			45000
+	[/if]
+	[then]
+		[duration]
+			30000
+		[target]
+			`party`	-1
+		[elemental weapon]
+			`dark`
+	[/then]
+	[pvp]
+		[if]
+			[attack success]
+				1
+			[cooltime]
+				45000
+		[/if]
+		[then]
+			[duration]
+				30000
+			[probability]
+				20
+			[reduce probability to human armor at pvp module]
+				80
+			[target]
+				`party`	-1
+			[elemental weapon]
+				`dark`
+		[/then]
+	[/pvp]
+[/set ability]
+
+[routing priority]
+[/routing priority]
+
+[possible kiri protect]

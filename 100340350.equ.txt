@@ -1,0 +1,118 @@
+#PVF_File
+
+[name]
+	`牛头统帅的图腾柱`
+
+[basic explain]
+	`    攻击时， 有2%%的几率使敌人进入减速状态。
+    装备时， 每30秒增加自身属性。`
+
+[detail explain]
+	`    攻击时， 有2%%的几率使敌人进入减速状态7秒； 减速状态下的敌人， 会减少15%%的移动速度和攻击速度。 (若敌人高于Lv90， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)
+    装备时， 每30秒会使自身增加20点力量、 智力、 体力和精神， 以及1.5%%的移动速度、 1.5%%的攻击速度和2%%的施放速度， 并增加1%%的物理暴击率和魔法暴击率； 该效果叠加以90秒为界， 之后重新计算。 (装备0.5秒后生效； 解除装备后效果消失； 最多重叠3次)`
+
+[grade]
+	90
+
+[rarity]
+	6
+
+[maximum level]
+	998
+
+[icon mark]
+	`item/iconmark.img`	67
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[need material]
+	19100131	1
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical attack]
+	45
+
+[magical attack]
+	45
+
+[physical defense]
+	45
+
+[magical defense]
+	45
+
+[price]
+	108000
+
+[value]
+	86400
+
+[creation rate]
+	0
+
+[icon]
+	`Item/new_equipment/10_support/support.img`	104
+
+[field image]
+	`Item/field_equip.img`	22
+
+[equipment type]
+	`[support]`	20
+
+[move wav]
+	`ASSIST_TOUCH`
+
+[weight]
+	700
+
+[item group name]
+	`support`
+
+[cool time]
+	10000
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		7000
+	[probability]
+		2
+	[reduce probability at pvp module]
+		80
+	[active status]
+		`slow`	90	15	15
+[/then]
+
+[if]
+	[time]
+		30000	1	500
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[duration]
+		90000
+	[appendage]
+		57
+[/then]
+
+[possible kiri protect]

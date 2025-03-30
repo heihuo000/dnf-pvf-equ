@@ -1,0 +1,108 @@
+#PVF_File
+
+[name]
+	`梦游仙境 - 柴郡猫`
+
+[explain]
+	`    攻击时， 有1%%的几率使敌人进入出血状态5秒。 (在决斗场中无效)`
+
+[flavor text]
+	`<2012劳动节礼包>`
+
+[grade]
+	1
+
+[rarity]
+	3
+
+[icon mark]
+	`Item/IconMark.img`	66
+
+[no random]
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	1
+
+[physical attack]
+	30
+
+[physical defense]
+	30
+
+[magical defense]
+	30
+
+[move speed]
+	20
+
+[attack speed]
+	15
+
+[cast speed]
+	20
+
+[HP MAX]
+	180
+
+[light attack]
+	3
+
+[fire attack]
+	3
+
+[water attack]
+	3
+
+[dark attack]
+	3
+
+[physical critical hit]
+	2
+
+[icon]
+	`Item/Title/title_cn.img`	152
+
+[custom animation]
+	`TitleAnimation/chn_2012_Cheshire_Mystery_Land.ani`
+[/custom animation]
+
+[equipment type]
+	`[title name]`	1
+
+[move wav]
+	`NAME_TOUCH`
+
+[weight]
+	1
+
+[if]
+	[module]
+		`[dead tower]`
+		`[dungeon]`
+		`[tournament dungeon]`
+		`[war room]`
+		`[blood system]`
+	[/module]
+	[cooltime]
+		20000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		1
+	[active status]
+		`bleeding`	-1	7
+[/then]

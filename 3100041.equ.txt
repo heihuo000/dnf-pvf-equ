@@ -1,0 +1,127 @@
+#PVF_File
+
+[name]
+	`睚眦之暴戾腰带`
+
+[basic explain]
+	`攻击时， 额外增加11%%的伤害增加量。 
+攻击时， 有5%%的几率使敌人进入诅咒状态。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入诅咒状态5秒； 诅咒状态下的敌人， 将减少20点力量、 体力、 智力和精神。 (若敌人高于Lv101， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果)`
+
+[flavor text]
+	`    谁能书阁下， 白首太玄经。`
+
+[grade]
+	95
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[part set index]
+	30222
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[need material]
+	3285	1500
+
+[minimum level]
+	95
+
+[physical attack]
+	28
+
+[magical attack]
+	28
+
+[magical defense]
+	31
+
+[equipment physical defense]
+	977	776
+
+[dark attack]
+	16
+
+[dark resistance]
+	8
+
+[need material]
+	3285	1500
+
+[inventory limit]
+	3000
+
+[price]
+	76800
+
+[repair price]
+	61440
+
+[value]
+	61440
+
+[icon]
+	`item/new_equipment/03_leather/belt/leather_belt.img`	69
+
+[field image]
+	`Item/FieldImage.img`	3
+
+[equipment type]
+	`[waist]`	17
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	20
+
+[weight]
+	800
+
+[item group name]
+	`lt waist`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[level]`	0	`+`	110
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		5000
+	[active status]
+		`curse`	101	20	20	20	20
+[/then]
+
+[possible kiri protect]
+
+[creation rate]
+	50
+
+[anti evil]
+	100

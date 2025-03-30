@@ -1,0 +1,183 @@
+#PVF_File
+
+[name]
+	`被诅咒的十字架 - 图卢瓦`
+
+[basic explain]
+	`    装备时每3秒500px范围内最近的敌人10秒内进入诅咒状态。
+ 
+攻击时， 附加35%%的伤害。`
+
+[detail explain]
+	`    装备时， 每3秒使500px范围内最近的敌人10秒内进入诅咒状态。 (诅咒状态下的敌人将减少100点力量、 体力、 智力和精神。 若敌人高于Lv91， 则减少该装备所有异常状态的发动几率和效果； 反之， 则增加几率和效果)
+ 
+攻击时， 附加35%%的伤害。`
+
+[flavor text]
+	`    这是......唉，最好还是严密封印起来吧......  ——格鲁`
+
+[grade]
+	85
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[priest]`
+	`[demonic swordman]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	85
+
+[physical defense]
+	77
+
+[magical attack]
+	65
+
+[magical defense]
+	77
+
+[cast speed]
+	20
+
+[price]
+	163800
+
+[need material]
+	3285	5000
+
+[repair price]
+	131040
+
+[value]
+	131040
+
+[creation rate]
+	200
+
+[equipment physical attack]
+	960	824
+
+[equipment magical attack]
+	912	783
+
+[equipment physical defense]
+	910	910
+
+[equipment magical defense]
+	910	910
+
+[separate attack]
+	589	382
+
+[skill levelup]
+	`[priest]`	45	3
+	`[priest]`	84	1
+	`[demonic swordman]`	78	3
+	`[demonic swordman]`	151	1
+[/skill levelup]
+
+[icon]
+	`Item/new_equipment/01_weapon/priest/cross/cross.img`	97
+
+[field image]
+	`Item/field_weapon.img`	11
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[priest]`
+
+[variation]
+	33	0
+
+[layer variation]
+	200
+	`crossd`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[layer variation]
+	2790
+	`crossc`
+
+[equipment ani script]
+	`equipment/character/priest.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`CROSS_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	3100
+
+[item group name]
+	`cross`
+
+[cool time]
+	10000
+
+[elemental property]
+	`[dark element]`
+
+[skill data up]
+	`[all]`	169	`[dungeon type]`	`[static]`	5	`+`	35
+[/skill data up]
+
+[if]
+	[time]
+		3000	1	500
+[/if]
+
+[then]
+	[target]
+		`all enemy`	500
+	[duration]
+		10000
+	[active status]
+		`curse`	91	100	100	100	100
+[/then]
+
+[possible kiri protect]
+
+[animation job]
+	`[demonic swordman]`
+
+[variation]
+	33	0
+
+[layer variation]
+	2790
+	`at_crossc`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	1350
+	`at_crossx`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`
+
+[layer variation]
+	200
+	`at_crossd`
+
+[equipment ani script]
+	`equipment/character/atpriest.lay`

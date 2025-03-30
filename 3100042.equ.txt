@@ -1,0 +1,144 @@
+#PVF_File
+
+[name]
+	`狻猊之烟火胸甲`
+
+[basic explain]
+	`暴击时， 额外增加11%%的伤害增加量。 
+攻击时， 有5%%的几率使敌人进入灼伤状态， 效果持续5秒。`
+
+[detail explain]
+	`    攻击时， 有5%%的几率使敌人进入灼伤状态5秒； 灼烧状态下的敌人， 每0.5秒受到1000点的伤害。(若敌人高于Lv120， 则减少进入异常状态的几率； 反之则增加几率)`
+
+[flavor text]
+	`    火树银花合， 星桥铁锁开。`
+
+[grade]
+	95
+
+[rarity]
+	4
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[part set index]
+	30222
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	95
+
+[physical attack]
+	46
+
+[magical attack]
+	46
+
+[magical defense]
+	52
+
+[fire attack]
+	16
+
+[fire resistance]
+	8
+
+[equipment physical defense]
+	2930	2328
+
+[need material]
+	3285	1500
+
+[price]
+	115200
+
+[repair price]
+	92160
+
+[value]
+	92160
+
+[icon]
+	`item/new_equipment/03_leather/coat/leather_coat.img`	73
+
+[field image]
+	`Item/FieldImage.img`	0
+
+[equipment type]
+	`[coat]`	20
+
+[sub type]
+	1
+
+[move wav]
+	`CLOTH_TOUCH`
+
+[durability]
+	33
+
+[weight]
+	1900
+
+[item group name]
+	`lt coat`
+
+[cool time]
+	10000
+
+[skill data up]
+	`[swordman]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[swordman]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[fighter]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[fighter]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[gunner]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[gunner]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[priest]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[priest]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[thief]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[thief]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[at mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[at mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	27	`+`	22
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	28	`+`	22
+[/skill data up]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		2000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		5
+	[duration]
+		5000
+	[active status]
+		`burn`	120	4000	0	0	0
+[/then]
+
+[possible kiri protect]
+
+[creation rate]
+	50
+
+[anti evil]
+	100

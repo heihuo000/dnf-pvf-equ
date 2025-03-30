@@ -1,0 +1,151 @@
+#PVF_File
+
+[name]
+	`莱亚诺瓦之咒[网咖]`
+
+[basic explain]
+	`攻击时以2%% 的机率让敌人陷入诅咒状态
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[detail explain]
+	`攻击时以2%%的机率在20秒内让敌人陷入诅咒状态， 力量减少28， 体力减少28， 智能减少28， 精神力减少28。 （高于Lv20的对象得到的机率减少， 低于Lv20的对象则会增加。）
+不可强化、增幅、提炼、解体、送礼、仓库储存`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[trade delete]`
+
+[minimum level]
+	20
+
+[physical attack]
+	27
+
+[attack speed]
+	100
+
+[stuck]
+	-1
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[equipment physical attack]
+	221	187
+
+[equipment magical attack]
+	234	198
+
+[separate attack]
+	148	96
+
+[physical critical hit]
+	10
+
+[skill levelup]
+	`[thief]`	3	2
+[/skill levelup]
+
+[curse resistance]
+	15
+
+[icon]
+	`Item/weapon/thief/dagger.img`	37
+
+[field image]
+	`Item/field_weapon.img`	16
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	3
+
+[layer variation]
+	2790
+	`daggerc`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	200
+	`daggerd`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1350
+	`daggerx`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	0
+
+[move wav]
+	`DAGGER_TOUCH`
+
+[durability]
+	35
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[if]
+	[cooltime]
+		30000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		20000
+	[probability]
+		2
+	[active status]
+		`curse`	20	28	28	28	28
+[/then]
+
+[impossible contents]
+	`upgrade`
+	`amplify upgrade`
+	`disjoint`
+	`gift`
+	`separate upgrade`
+	`charac cargo`
+[/impossible contents]
+
+[possible kiri protect]

@@ -1,0 +1,140 @@
+#PVF_File
+
+[name]
+	`混元武士的厄运胸甲`
+
+[basic explain]
+	`力量 +300
+智力 +300
+ 
+装备后， 每30秒， 使自身进入中毒状态。`
+
+[detail explain]
+	`力量 +300
+智力 +300
+ 
+每30秒， 使自身进入中毒状态30秒； 中毒状态下， 每0.5秒受到50点伤害。 (若敌人高于Lv100， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 装备1秒后生效)`
+
+[flavor text]
+	`    爱情有时候比毒药还可怕......`
+
+[grade]
+	80
+
+[rarity]
+	4
+
+[part set index]
+	11468
+
+[icon mark]
+	`item/iconmark.img`	68
+
+[usable job]
+	`[all]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	75
+
+[physical attack]
+	92
+
+[magical attack]
+	78
+
+[HP MAX]
+	500
+
+[need material]
+	3285	3000
+
+[price]
+	113400
+
+[repair price]
+	90720
+
+[value]
+	90720
+
+[creation rate]
+	200
+
+[equipment physical defense]
+	3312	2988
+
+[icon]
+	`item/new_equipment/04_larmor/coat/larmor_coat.img`	20
+
+[field image]
+	`Item/field_equip.img`	5
+
+[equipment type]
+	`[coat]`	19
+
+[sub type]
+	2
+
+[move wav]
+	`BONE_TOUCH`
+
+[durability]
+	38
+
+[weight]
+	3100
+
+[item group name]
+	`la coat`
+
+[cool time]
+	10000
+
+[if]
+	[time]
+		30000	1	1000
+	[cooltime]
+		30000
+[/if]
+
+[then]
+	[target]
+		`myself`	-1
+	[probability]
+		300
+	[duration]
+		30000
+	[active status]
+		`poison`	300	3000
+[/then]
+
+[skill data up]
+	`[swordman]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[fighter]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[gunner]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[mage]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[priest]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[thief]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[at mage]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	4	`+`	300
+	`[swordman]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[fighter]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[gunner]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[mage]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[priest]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[at gunner]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[thief]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[at fighter]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[at mage]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[demonic swordman]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+	`[creator mage]`	254	`[dungeon type]`	`[level]`	5	`+`	300
+[/skill data up]
+
+[possible kiri protect]

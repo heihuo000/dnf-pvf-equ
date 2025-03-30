@@ -1,0 +1,191 @@
+#PVF_File
+
+[name]
+	`浴血红莲臂铠`
+
+[basic explain]
+	`    攻击时， 有3%%的几率使敌人进入出血状态5秒。
+    装备时， 若500px范围内有出血状态的敌人， 则增加自身50点力量、 5%%的攻击速度和移动速度、 3%%的物理暴击率， 并减少10%%的装备防御力。 (效果不会重叠)`
+
+[detail explain]
+	`    攻击时， 有3%%的几率使敌人进入出血状态5秒； 出血状态下的敌人， 每0.5秒会受到80点伤害。 (若敌人高于Lv29， 则减少进入异常状态的几率和效果； 反之， 则增加几率和效果； 冷却时间3秒)
+    装备时， 若500px范围内有出血状态的敌人， 则增加自身50点力量、 5%%的攻击速度和移动速度、 3%%的物理暴击率， 并减少10%%的装备防御力。 (效果不会重叠)`
+
+[grade]
+	29
+
+[rarity]
+	3
+
+[usable job]
+	`[fighter]`
+	`[at fighter]`
+[/usable job]
+
+[random option]
+	1
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	25
+
+[physical attack]
+	33
+
+[attack speed]
+	-80
+
+[stuck]
+	-1.0
+
+[need material]
+	10149508	30
+
+[price]
+	52200
+
+[repair price]
+	41760
+
+[value]
+	41760
+
+[creation rate]
+	0
+
+[equipment physical attack]
+	360	312
+
+[equipment magical attack]
+	270	234
+
+[separate attack]
+	171	112
+
+[icon]
+	`item/new_equipment/01_weapon/fighter/gauntlet/gauntlet.img`	125
+
+[field image]
+	`Item/FieldImage.img`	16
+
+[equipment type]
+	`[weapon]`	24
+
+[animation job]
+	`[fighter]`
+
+[variation]
+	36	0
+
+[layer variation]
+	2790
+	`gauntletc`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[layer variation]
+	650
+	`gauntletb`
+
+[equipment ani script]
+	`equipment/character/fighter.lay`
+
+[animation job]
+	`[at fighter]`
+
+[variation]
+	35	0
+
+[layer variation]
+	2150
+	`at_gauntleta`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	2790
+	`at_gauntletc`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[layer variation]
+	1350
+	`at_gauntletx`
+
+[equipment ani script]
+	`equipment/character/atfighter.lay`
+
+[sub type]
+	1
+
+[move wav]
+	`GUNTLET_TOUCH`
+
+[durability]
+	48
+
+[weight]
+	2900
+
+[item group name]
+	`gauntlet`
+
+[cool time]
+	10000
+
+[item category]
+	`boss drop`
+[/item category]
+
+[variable stat]
+	`physical attack`
+	`+`	50
+	`object number`
+	`enemy`	500
+	`bleeding`	1
+	`attack speed`
+	`+`	50
+	`object number`
+	`enemy`	500
+	`bleeding`	1
+	`move speed`
+	`+`	50
+	`object number`
+	`enemy`	500
+	`bleeding`	1
+	`physical critical hit`
+	`+`	3
+	`object number`
+	`enemy`	500
+	`bleeding`	1
+	`equipment physical defense`
+	`%`	-10
+	`object number`
+	`enemy`	500
+	`bleeding`	1
+[/variable stat]
+
+[if]
+	[attack success]
+		1
+	[cooltime]
+		3000
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[probability]
+		3
+	[reduce probability at pvp module]
+		80
+	[duration]
+		5000
+	[active status]
+		`bleeding`	29	800
+[/then]

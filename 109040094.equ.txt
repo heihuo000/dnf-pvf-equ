@@ -1,0 +1,167 @@
+#PVF_File
+
+[name]
+	`剧毒短刀`
+
+[basic explain]
+	`攻击时， 有5%%的几率使敌人进入中毒状态。 (冷却时间5秒)`
+
+[detail explain]
+	`攻击时， 有5%%的几率使敌人进入中毒状态5秒； 中毒状态下的敌人， 每0.5秒会受到250点伤害。 (冷却时间5秒)`
+
+[grade]
+	24
+
+[rarity]
+	3
+
+[icon mark]
+	`item/iconmark.img`	66
+
+[usable job]
+	`[thief]`
+[/usable job]
+
+[attach type]
+	`[sealing]`
+
+[minimum level]
+	20
+
+[magical attack]
+	29
+
+[attack speed]
+	-50
+
+[cast speed]
+	50
+
+[stuck]
+	1
+
+[price]
+	38400
+
+[repair price]
+	30720
+
+[value]
+	30720
+
+[creation rate]
+	500
+
+[equipment physical attack]
+	231	168
+
+[equipment magical attack]
+	286	242
+
+[separate attack]
+	147	95
+
+[skill levelup]
+	`[thief]`	86	2
+[/skill levelup]
+
+[icon]
+	`item/new_equipment/01_weapon/thief/chakraweapon/chakraweapon.img`	14
+
+[field image]
+	`Item/field_weapon.img`	19
+
+[equipment type]
+	`[weapon]`	23
+
+[animation job]
+	`[thief]`
+
+[variation]
+	1	5
+
+[layer variation]
+	2791
+	`chakraweaponc1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	2792
+	`chakraweaponc2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	210
+	`chakraweapond1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	220
+	`chakraweapond2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1360
+	`chakraweaponx1`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[layer variation]
+	1370
+	`chakraweaponx2`
+
+[equipment ani script]
+	`equipment/character/thief.lay`
+
+[sub type]
+	5
+
+[move wav]
+	`KUNAI_TOUCH`
+
+[durability]
+	45
+
+[weight]
+	2100
+
+[item group name]
+	`dagger`
+
+[cool time]
+	10000
+
+[possible kiri protect]
+
+[required skill]
+	79
+
+[if]
+	[cooltime]
+		5000
+	[attack success]
+		1
+[/if]
+
+[then]
+	[target]
+		`enemy`	-1
+	[duration]
+		5000
+	[probability]
+		5
+	[active status]
+		`poison`	24	2500
+[/then]
+
+[random option]
+	1
